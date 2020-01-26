@@ -1,11 +1,11 @@
 # AggieCashStudent
 
 ## View Controllers
-- Login & Sign up controller
+- Login & Sign up controller, Kenny
   - Google sign in + Remember me
   - Guest sign in 
   
-- “Select food truck” controller
+- “Select food truck” controller, Adam and Evelyn
   - List of food trucks
   - Food Truck Menu
   - You can select multiple items
@@ -14,7 +14,7 @@
   - Cart/ checkout
   - Enter payment option
 
-- Profile view controller
+- Profile view controller, Davy and Deli
   - Name
   - Email
   - PaymentPro information (optional)
