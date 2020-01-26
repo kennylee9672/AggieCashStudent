@@ -7,24 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ADE0781B23DE1DDF00366158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE0781A23DE1DDF00366158 /* AppDelegate.swift */; };
-		ADE0781D23DE1DDF00366158 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE0781C23DE1DDF00366158 /* ViewController.swift */; };
-		ADE0781F23DE1DE000366158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE0781E23DE1DE000366158 /* Assets.xcassets */; };
-		ADE0782223DE1DE000366158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE0782023DE1DE000366158 /* Main.storyboard */; };
+		C550721723DE1F70006DFA37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550721623DE1F70006DFA37 /* AppDelegate.swift */; };
+		C550721923DE1F70006DFA37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550721823DE1F70006DFA37 /* SceneDelegate.swift */; };
+		C550721B23DE1F70006DFA37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550721A23DE1F70006DFA37 /* ViewController.swift */; };
+		C550721E23DE1F70006DFA37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C550721C23DE1F70006DFA37 /* Main.storyboard */; };
+		C550722023DE1F72006DFA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C550721F23DE1F72006DFA37 /* Assets.xcassets */; };
+		C550722323DE1F72006DFA37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C550722123DE1F72006DFA37 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ADE0781723DE1DDF00366158 /* AggieCashStudent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AggieCashStudent.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADE0781A23DE1DDF00366158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ADE0781C23DE1DDF00366158 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ADE0781E23DE1DE000366158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ADE0782123DE1DE000366158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ADE0782323DE1DE000366158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADE0782423DE1DE000366158 /* AggieCashStudent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AggieCashStudent.entitlements; sourceTree = "<group>"; };
+		C550721323DE1F70006DFA37 /* AggieCashStudent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AggieCashStudent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C550721623DE1F70006DFA37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C550721823DE1F70006DFA37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C550721A23DE1F70006DFA37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C550721D23DE1F70006DFA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C550721F23DE1F72006DFA37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C550722223DE1F72006DFA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C550722423DE1F72006DFA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ADE0781423DE1DDF00366158 /* Frameworks */ = {
+		C550721023DE1F70006DFA37 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,31 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ADE0780E23DE1DDF00366158 = {
+		C550720A23DE1F70006DFA37 = {
 			isa = PBXGroup;
 			children = (
-				ADE0781923DE1DDF00366158 /* AggieCashStudent */,
-				ADE0781823DE1DDF00366158 /* Products */,
+				C550721523DE1F70006DFA37 /* AggieCashStudent */,
+				C550721423DE1F70006DFA37 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ADE0781823DE1DDF00366158 /* Products */ = {
+		C550721423DE1F70006DFA37 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADE0781723DE1DDF00366158 /* AggieCashStudent.app */,
+				C550721323DE1F70006DFA37 /* AggieCashStudent.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ADE0781923DE1DDF00366158 /* AggieCashStudent */ = {
+		C550721523DE1F70006DFA37 /* AggieCashStudent */ = {
 			isa = PBXGroup;
 			children = (
-				ADE0781A23DE1DDF00366158 /* AppDelegate.swift */,
-				ADE0781C23DE1DDF00366158 /* ViewController.swift */,
-				ADE0781E23DE1DE000366158 /* Assets.xcassets */,
-				ADE0782023DE1DE000366158 /* Main.storyboard */,
-				ADE0782323DE1DE000366158 /* Info.plist */,
-				ADE0782423DE1DE000366158 /* AggieCashStudent.entitlements */,
+				C550721623DE1F70006DFA37 /* AppDelegate.swift */,
+				C550721823DE1F70006DFA37 /* SceneDelegate.swift */,
+				C550721A23DE1F70006DFA37 /* ViewController.swift */,
+				C550721C23DE1F70006DFA37 /* Main.storyboard */,
+				C550721F23DE1F72006DFA37 /* Assets.xcassets */,
+				C550722123DE1F72006DFA37 /* LaunchScreen.storyboard */,
+				C550722423DE1F72006DFA37 /* Info.plist */,
 			);
 			path = AggieCashStudent;
 			sourceTree = "<group>";
@@ -66,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ADE0781623DE1DDF00366158 /* AggieCashStudent */ = {
+		C550721223DE1F70006DFA37 /* AggieCashStudent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADE0782723DE1DE000366158 /* Build configuration list for PBXNativeTarget "AggieCashStudent" */;
+			buildConfigurationList = C550722723DE1F72006DFA37 /* Build configuration list for PBXNativeTarget "AggieCashStudent" */;
 			buildPhases = (
-				ADE0781323DE1DDF00366158 /* Sources */,
-				ADE0781423DE1DDF00366158 /* Frameworks */,
-				ADE0781523DE1DDF00366158 /* Resources */,
+				C550720F23DE1F70006DFA37 /* Sources */,
+				C550721023DE1F70006DFA37 /* Frameworks */,
+				C550721123DE1F70006DFA37 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -80,25 +84,25 @@
 			);
 			name = AggieCashStudent;
 			productName = AggieCashStudent;
-			productReference = ADE0781723DE1DDF00366158 /* AggieCashStudent.app */;
+			productReference = C550721323DE1F70006DFA37 /* AggieCashStudent.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ADE0780F23DE1DDF00366158 /* Project object */ = {
+		C550720B23DE1F70006DFA37 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "UC Davis ECS 199 Winter 2020";
+				ORGANIZATIONNAME = AggieCashStudent;
 				TargetAttributes = {
-					ADE0781623DE1DDF00366158 = {
-						CreatedOnToolsVersion = 11.3;
+					C550721223DE1F70006DFA37 = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = ADE0781223DE1DDF00366158 /* Build configuration list for PBXProject "AggieCashStudent" */;
+			buildConfigurationList = C550720E23DE1F70006DFA37 /* Build configuration list for PBXProject "AggieCashStudent" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -106,53 +110,63 @@
 				en,
 				Base,
 			);
-			mainGroup = ADE0780E23DE1DDF00366158;
-			productRefGroup = ADE0781823DE1DDF00366158 /* Products */;
+			mainGroup = C550720A23DE1F70006DFA37;
+			productRefGroup = C550721423DE1F70006DFA37 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ADE0781623DE1DDF00366158 /* AggieCashStudent */,
+				C550721223DE1F70006DFA37 /* AggieCashStudent */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ADE0781523DE1DDF00366158 /* Resources */ = {
+		C550721123DE1F70006DFA37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE0781F23DE1DE000366158 /* Assets.xcassets in Resources */,
-				ADE0782223DE1DE000366158 /* Main.storyboard in Resources */,
+				C550722323DE1F72006DFA37 /* LaunchScreen.storyboard in Resources */,
+				C550722023DE1F72006DFA37 /* Assets.xcassets in Resources */,
+				C550721E23DE1F70006DFA37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ADE0781323DE1DDF00366158 /* Sources */ = {
+		C550720F23DE1F70006DFA37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE0781D23DE1DDF00366158 /* ViewController.swift in Sources */,
-				ADE0781B23DE1DDF00366158 /* AppDelegate.swift in Sources */,
+				C550721B23DE1F70006DFA37 /* ViewController.swift in Sources */,
+				C550721723DE1F70006DFA37 /* AppDelegate.swift in Sources */,
+				C550721923DE1F70006DFA37 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ADE0782023DE1DE000366158 /* Main.storyboard */ = {
+		C550721C23DE1F70006DFA37 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ADE0782123DE1DE000366158 /* Base */,
+				C550721D23DE1F70006DFA37 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C550722123DE1F72006DFA37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C550722223DE1F72006DFA37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		ADE0782523DE1DE000366158 /* Debug */ = {
+		C550722523DE1F72006DFA37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -202,17 +216,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		ADE0782623DE1DE000366158 /* Release */ = {
+		C550722623DE1F72006DFA37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -256,77 +270,74 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		ADE0782823DE1DE000366158 /* Debug */ = {
+		C550722823DE1F72006DFA37 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AggieCashStudent/AggieCashStudent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = X22764N5GT;
-				ENABLE_HARDENED_RUNTIME = YES;
+				DEVELOPMENT_TEAM = 6H6P74M82Q;
 				INFOPLIST_FILE = AggieCashStudent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.ucdavis.cs.AggieCashStudent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucdavis.cs.AggieCashStudent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		ADE0782923DE1DE000366158 /* Release */ = {
+		C550722923DE1F72006DFA37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AggieCashStudent/AggieCashStudent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = X22764N5GT;
-				ENABLE_HARDENED_RUNTIME = YES;
+				DEVELOPMENT_TEAM = 6H6P74M82Q;
 				INFOPLIST_FILE = AggieCashStudent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.ucdavis.cs.AggieCashStudent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucdavis.cs.AggieCashStudent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ADE0781223DE1DDF00366158 /* Build configuration list for PBXProject "AggieCashStudent" */ = {
+		C550720E23DE1F70006DFA37 /* Build configuration list for PBXProject "AggieCashStudent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ADE0782523DE1DE000366158 /* Debug */,
-				ADE0782623DE1DE000366158 /* Release */,
+				C550722523DE1F72006DFA37 /* Debug */,
+				C550722623DE1F72006DFA37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADE0782723DE1DE000366158 /* Build configuration list for PBXNativeTarget "AggieCashStudent" */ = {
+		C550722723DE1F72006DFA37 /* Build configuration list for PBXNativeTarget "AggieCashStudent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ADE0782823DE1DE000366158 /* Debug */,
-				ADE0782923DE1DE000366158 /* Release */,
+				C550722823DE1F72006DFA37 /* Debug */,
+				C550722923DE1F72006DFA37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ADE0780F23DE1DDF00366158 /* Project object */;
+	rootObject = C550720B23DE1F70006DFA37 /* Project object */;
 }

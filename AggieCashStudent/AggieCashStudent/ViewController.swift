@@ -2,24 +2,17 @@
 //  ViewController.swift
 //  AggieCashStudent
 //
-//  Created by Kenny Li on 1/26/20.
-//  Copyright © 2020 UC Davis ECS 199 Winter 2020. All rights reserved.
+//  Created by Adila on 1/26/20.
+//  Copyright © 2020 AggieCashStudent. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
-class ViewController: NSViewController {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-    }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
     }
 
 
