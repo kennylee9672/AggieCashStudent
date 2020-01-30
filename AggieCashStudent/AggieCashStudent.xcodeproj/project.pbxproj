@@ -3,14 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		ADF31FF923E2AA30008CF7DB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = ADF31FF823E2AA30008CF7DB /* Podfile */; };
+		ADF31FFB23E2AB9C008CF7DB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF31FFA23E2AB9C008CF7DB /* SignUpViewController.swift */; };
+		ADF31FFD23E2ABAB008CF7DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF31FFC23E2ABAB008CF7DB /* LoginViewController.swift */; };
+		ADF31FFF23E2ABBD008CF7DB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF31FFE23E2ABBD008CF7DB /* ProfileViewController.swift */; };
+		ADF3200123E2ABCB008CF7DB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF3200023E2ABCB008CF7DB /* SettingViewController.swift */; };
+		ADF3200323E2ABD8008CF7DB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF3200223E2ABD8008CF7DB /* MenuViewController.swift */; };
+		ADF3200523E2AC64008CF7DB /* VendorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF3200423E2AC64008CF7DB /* VendorViewController.swift */; };
 		C550723723DE2202006DFA37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550723623DE2202006DFA37 /* AppDelegate.swift */; };
 		C550723923DE2202006DFA37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550723823DE2202006DFA37 /* SceneDelegate.swift */; };
-		C550723B23DE2202006DFA37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550723A23DE2202006DFA37 /* ViewController.swift */; };
 		C550723E23DE2202006DFA37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C550723C23DE2202006DFA37 /* Main.storyboard */; };
 		C550724023DE2205006DFA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C550723F23DE2205006DFA37 /* Assets.xcassets */; };
 		C550724323DE2205006DFA37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C550724123DE2205006DFA37 /* LaunchScreen.storyboard */; };
@@ -21,11 +26,16 @@
 		28B5EDF0D35393AE23496DBB /* Pods_AggieCashStudent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AggieCashStudent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7285358FF1621993D1DCDFAC /* Pods-AggieCashStudent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggieCashStudent.release.xcconfig"; path = "Target Support Files/Pods-AggieCashStudent/Pods-AggieCashStudent.release.xcconfig"; sourceTree = "<group>"; };
 		ADF31FF823E2AA30008CF7DB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		ADF31FFA23E2AB9C008CF7DB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		ADF31FFC23E2ABAB008CF7DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ADF31FFE23E2ABBD008CF7DB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ADF3200023E2ABCB008CF7DB /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		ADF3200223E2ABD8008CF7DB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		ADF3200423E2AC64008CF7DB /* VendorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorViewController.swift; sourceTree = "<group>"; };
 		B67B1A559C5C9B6D5D31C664 /* Pods-AggieCashStudent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggieCashStudent.debug.xcconfig"; path = "Target Support Files/Pods-AggieCashStudent/Pods-AggieCashStudent.debug.xcconfig"; sourceTree = "<group>"; };
 		C550723323DE2202006DFA37 /* AggieCashStudent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AggieCashStudent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C550723623DE2202006DFA37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C550723823DE2202006DFA37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C550723A23DE2202006DFA37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C550723D23DE2202006DFA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C550723F23DE2205006DFA37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C550724223DE2205006DFA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,8 +60,20 @@
 				B67B1A559C5C9B6D5D31C664 /* Pods-AggieCashStudent.debug.xcconfig */,
 				7285358FF1621993D1DCDFAC /* Pods-AggieCashStudent.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		ADF3200623E2AD69008CF7DB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADF31FFA23E2AB9C008CF7DB /* SignUpViewController.swift */,
+				ADF31FFC23E2ABAB008CF7DB /* LoginViewController.swift */,
+				ADF31FFE23E2ABBD008CF7DB /* ProfileViewController.swift */,
+				ADF3200023E2ABCB008CF7DB /* SettingViewController.swift */,
+				ADF3200223E2ABD8008CF7DB /* MenuViewController.swift */,
+				ADF3200423E2AC64008CF7DB /* VendorViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		C550722A23DE2202006DFA37 = {
@@ -75,13 +97,13 @@
 		C550723523DE2202006DFA37 /* AggieCashStudent */ = {
 			isa = PBXGroup;
 			children = (
+				ADF3200623E2AD69008CF7DB /* ViewControllers */,
 				ADF31FF823E2AA30008CF7DB /* Podfile */,
 				C550723623DE2202006DFA37 /* AppDelegate.swift */,
 				C550723823DE2202006DFA37 /* SceneDelegate.swift */,
-				C550723A23DE2202006DFA37 /* ViewController.swift */,
 				C550723C23DE2202006DFA37 /* Main.storyboard */,
-				C550723F23DE2205006DFA37 /* Assets.xcassets */,
 				C550724123DE2205006DFA37 /* LaunchScreen.storyboard */,
+				C550723F23DE2205006DFA37 /* Assets.xcassets */,
 				C550724423DE2205006DFA37 /* Info.plist */,
 			);
 			path = AggieCashStudent;
@@ -211,9 +233,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C550723B23DE2202006DFA37 /* ViewController.swift in Sources */,
+				ADF31FFF23E2ABBD008CF7DB /* ProfileViewController.swift in Sources */,
 				C550723723DE2202006DFA37 /* AppDelegate.swift in Sources */,
+				ADF3200523E2AC64008CF7DB /* VendorViewController.swift in Sources */,
+				ADF31FFB23E2AB9C008CF7DB /* SignUpViewController.swift in Sources */,
+				ADF31FFD23E2ABAB008CF7DB /* LoginViewController.swift in Sources */,
+				ADF3200123E2ABCB008CF7DB /* SettingViewController.swift in Sources */,
 				C550723923DE2202006DFA37 /* SceneDelegate.swift in Sources */,
+				ADF3200323E2ABD8008CF7DB /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
