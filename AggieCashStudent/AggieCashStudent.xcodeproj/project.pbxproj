@@ -76,7 +76,6 @@
 				ADF3200023E2ABCB008CF7DB /* SettingViewController.swift */,
 				ADF3200223E2ABD8008CF7DB /* MenuViewController.swift */,
 				ADF3200423E2AC64008CF7DB /* VendorViewController.swift */,
-				ADF3200723E2B082008CF7DB /* UIcontroller.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -106,6 +105,7 @@
 				ADF31FF823E2AA30008CF7DB /* Podfile */,
 				C550723623DE2202006DFA37 /* AppDelegate.swift */,
 				C550723823DE2202006DFA37 /* SceneDelegate.swift */,
+				ADF3200723E2B082008CF7DB /* UIcontroller.swift */,
 				C550723C23DE2202006DFA37 /* Main.storyboard */,
 				C550724123DE2205006DFA37 /* LaunchScreen.storyboard */,
 				C550723F23DE2205006DFA37 /* Assets.xcassets */,

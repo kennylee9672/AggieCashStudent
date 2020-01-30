@@ -8,7 +8,7 @@
 import UIKit
 import Foundation
 
-class UIController {
+class UIcontroller {
     
     let IMAGE_MAX: Int64 =  1 * 1024 * 1024
     
@@ -91,7 +91,6 @@ class UIController {
         }
         return resizedImage
     }
-    
     
     func setTableActicityIndicator(tv: UITableView, isTop: Bool) {
         let spinner = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
