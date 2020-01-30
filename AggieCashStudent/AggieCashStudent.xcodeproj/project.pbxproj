@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADF31FF923E2AA30008CF7DB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = ADF31FF823E2AA30008CF7DB /* Podfile */; };
 		C550723723DE2202006DFA37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550723623DE2202006DFA37 /* AppDelegate.swift */; };
 		C550723923DE2202006DFA37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550723823DE2202006DFA37 /* SceneDelegate.swift */; };
 		C550723B23DE2202006DFA37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550723A23DE2202006DFA37 /* ViewController.swift */; };
 		C550723E23DE2202006DFA37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C550723C23DE2202006DFA37 /* Main.storyboard */; };
 		C550724023DE2205006DFA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C550723F23DE2205006DFA37 /* Assets.xcassets */; };
 		C550724323DE2205006DFA37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C550724123DE2205006DFA37 /* LaunchScreen.storyboard */; };
+		CC6DC2A9B28C6DD5746A7F0A /* Pods_AggieCashStudent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B5EDF0D35393AE23496DBB /* Pods_AggieCashStudent.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28B5EDF0D35393AE23496DBB /* Pods_AggieCashStudent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AggieCashStudent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7285358FF1621993D1DCDFAC /* Pods-AggieCashStudent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggieCashStudent.release.xcconfig"; path = "Target Support Files/Pods-AggieCashStudent/Pods-AggieCashStudent.release.xcconfig"; sourceTree = "<group>"; };
+		ADF31FF823E2AA30008CF7DB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		B67B1A559C5C9B6D5D31C664 /* Pods-AggieCashStudent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggieCashStudent.debug.xcconfig"; path = "Target Support Files/Pods-AggieCashStudent/Pods-AggieCashStudent.debug.xcconfig"; sourceTree = "<group>"; };
 		C550723323DE2202006DFA37 /* AggieCashStudent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AggieCashStudent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C550723623DE2202006DFA37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C550723823DE2202006DFA37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC6DC2A9B28C6DD5746A7F0A /* Pods_AggieCashStudent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D7DBC121380DEFC518AF28C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B67B1A559C5C9B6D5D31C664 /* Pods-AggieCashStudent.debug.xcconfig */,
+				7285358FF1621993D1DCDFAC /* Pods-AggieCashStudent.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C550722A23DE2202006DFA37 = {
 			isa = PBXGroup;
 			children = (
 				C550723523DE2202006DFA37 /* AggieCashStudent */,
 				C550723423DE2202006DFA37 /* Products */,
+				4D7DBC121380DEFC518AF28C /* Pods */,
+				F408710AA66898F497D2B647 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +75,7 @@
 		C550723523DE2202006DFA37 /* AggieCashStudent */ = {
 			isa = PBXGroup;
 			children = (
+				ADF31FF823E2AA30008CF7DB /* Podfile */,
 				C550723623DE2202006DFA37 /* AppDelegate.swift */,
 				C550723823DE2202006DFA37 /* SceneDelegate.swift */,
 				C550723A23DE2202006DFA37 /* ViewController.swift */,
@@ -67,6 +87,14 @@
 			path = AggieCashStudent;
 			sourceTree = "<group>";
 		};
+		F408710AA66898F497D2B647 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28B5EDF0D35393AE23496DBB /* Pods_AggieCashStudent.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C550724723DE2205006DFA37 /* Build configuration list for PBXNativeTarget "AggieCashStudent" */;
 			buildPhases = (
+				B764C635E11241BC80BD216D /* [CP] Check Pods Manifest.lock */,
 				C550722F23DE2202006DFA37 /* Sources */,
 				C550723023DE2202006DFA37 /* Frameworks */,
 				C550723123DE2202006DFA37 /* Resources */,
+				D474BA5D2FBC6DA03E2249D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +157,54 @@
 			files = (
 				C550724323DE2205006DFA37 /* LaunchScreen.storyboard in Resources */,
 				C550724023DE2205006DFA37 /* Assets.xcassets in Resources */,
+				ADF31FF923E2AA30008CF7DB /* Podfile in Resources */,
 				C550723E23DE2202006DFA37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B764C635E11241BC80BD216D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AggieCashStudent-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D474BA5D2FBC6DA03E2249D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AggieCashStudent/Pods-AggieCashStudent-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AggieCashStudent/Pods-AggieCashStudent-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AggieCashStudent/Pods-AggieCashStudent-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C550722F23DE2202006DFA37 /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		C550724823DE2205006DFA37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B67B1A559C5C9B6D5D31C664 /* Pods-AggieCashStudent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +374,7 @@
 		};
 		C550724923DE2205006DFA37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7285358FF1621993D1DCDFAC /* Pods-AggieCashStudent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
