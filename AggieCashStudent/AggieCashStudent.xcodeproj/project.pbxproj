@@ -15,6 +15,7 @@
 		ADF3200123E2ABCB008CF7DB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF3200023E2ABCB008CF7DB /* SettingViewController.swift */; };
 		ADF3200323E2ABD8008CF7DB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF3200223E2ABD8008CF7DB /* MenuViewController.swift */; };
 		ADF3200523E2AC64008CF7DB /* VendorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF3200423E2AC64008CF7DB /* VendorViewController.swift */; };
+		ADF3200823E2B082008CF7DB /* UIcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF3200723E2B082008CF7DB /* UIcontroller.swift */; };
 		C550723723DE2202006DFA37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550723623DE2202006DFA37 /* AppDelegate.swift */; };
 		C550723923DE2202006DFA37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550723823DE2202006DFA37 /* SceneDelegate.swift */; };
 		C550723E23DE2202006DFA37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C550723C23DE2202006DFA37 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		ADF3200023E2ABCB008CF7DB /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		ADF3200223E2ABD8008CF7DB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		ADF3200423E2AC64008CF7DB /* VendorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorViewController.swift; sourceTree = "<group>"; };
+		ADF3200723E2B082008CF7DB /* UIcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIcontroller.swift; sourceTree = "<group>"; };
 		B67B1A559C5C9B6D5D31C664 /* Pods-AggieCashStudent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggieCashStudent.debug.xcconfig"; path = "Target Support Files/Pods-AggieCashStudent/Pods-AggieCashStudent.debug.xcconfig"; sourceTree = "<group>"; };
 		C550723323DE2202006DFA37 /* AggieCashStudent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AggieCashStudent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C550723623DE2202006DFA37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				ADF3200023E2ABCB008CF7DB /* SettingViewController.swift */,
 				ADF3200223E2ABD8008CF7DB /* MenuViewController.swift */,
 				ADF3200423E2AC64008CF7DB /* VendorViewController.swift */,
+				ADF3200723E2B082008CF7DB /* UIcontroller.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				ADF31FFB23E2AB9C008CF7DB /* SignUpViewController.swift in Sources */,
 				ADF31FFD23E2ABAB008CF7DB /* LoginViewController.swift in Sources */,
 				ADF3200123E2ABCB008CF7DB /* SettingViewController.swift in Sources */,
+				ADF3200823E2B082008CF7DB /* UIcontroller.swift in Sources */,
 				C550723923DE2202006DFA37 /* SceneDelegate.swift in Sources */,
 				ADF3200323E2ABD8008CF7DB /* MenuViewController.swift in Sources */,
 			);
