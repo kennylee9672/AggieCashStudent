@@ -28,7 +28,7 @@
 		28B5EDF0D35393AE23496DBB /* Pods_AggieCashStudent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AggieCashStudent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BEE32F723E2ACDD0038FE6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7285358FF1621993D1DCDFAC /* Pods-AggieCashStudent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggieCashStudent.release.xcconfig"; path = "Target Support Files/Pods-AggieCashStudent/Pods-AggieCashStudent.release.xcconfig"; sourceTree = "<group>"; };
-		ADF31FF823E2AA30008CF7DB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		ADF31FF823E2AA30008CF7DB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ADF31FFA23E2AB9C008CF7DB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		ADF31FFC23E2ABAB008CF7DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ADF31FFE23E2ABBD008CF7DB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };

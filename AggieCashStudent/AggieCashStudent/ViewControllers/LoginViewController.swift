@@ -9,21 +9,32 @@
 import UIKit
 import FirebaseAuth
 
+let INVALID_INFO = 0
+let NIL_INFO = 1
+let VERIFY_ERR = 2
+let DEFAULT_ERR = 3
+
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var messageLable: UILabel!
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var signupButton: UIButton!
+    @IBOutlet weak var loginOrSignupButton: UISegmentedControl!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    //let ui: UIcontroller = UIcontroller()
+    let ui = UIcontroller()
+    let LoginErrors: [Int : String] = [
+        INVALID_INFO : "Please enter both email and password.",
+        NIL_INFO : "Invalid email or password.",
+        VERIFY_ERR : "Pleas check your network.",
+        DEFAULT_ERR : "Error."
+    ]
     
-    // VC inialization
+    /**
+     * ViewController Inialization:
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupKeyboardDismiss()
         self.setUI()
     }
     
@@ -32,54 +43,64 @@ class LoginViewController: UIViewController {
         self.activityIndicator.isHidden = true
     }
     
-    // Touch actions
-    @IBAction func touchLogin(_ sender: Any) {
-        if let email = self.emailField.text,
-            let password = self.passwordField.text {
-            
-            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-                if error != nil {
-                    //TODO: display error message
-                } else {
-                    if let verified = Auth.auth().currentUser?.isEmailVerified {
-                        if (verified) {
-                            self.navigateToHome()
-                        } else {
-                            print("Error: not verified")
-                        }
-                    }
-                }
+    /**
+     * Button Actions:
+     */
+    @IBAction func touchSegmentControl(_ sender: Any) {
+        let index = self.loginOrSignupButton.selectedSegmentIndex
+        switch index {
+        case 0:
+            if let email = self.emailField.text,
+                let password = self.passwordField.text {
+                verifyLogin(email: email, password: password)
             }
-            
-        } else {
-            //TODO: display error message
-            return
+            else {
+                self.displayError(with: NIL_INFO)
+            }
+            break
+        case 1:
+            navigateToSignup()
+            break
+        default:
+            self.displayError(with: DEFAULT_ERR)
+            break
         }
     }
     
-    @IBAction func touchSignup(_ sender: Any) {
-        navigateToSignup()
+    /**
+     * Helper method:
+     *
+     * Verify login information
+     * UI setting
+     * ViewController segue
+     */
+    func verifyLogin(email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { res, error in
+            if error != nil {
+                self.displayError(with: INVALID_INFO)
+            } else {
+                if let isVerified = Auth.auth().currentUser?.isEmailVerified {
+                    if (isVerified) {
+                        self.navigateToHome()
+                    } else {
+                        self.displayError(with: VERIFY_ERR)
+                    }
+                }
+            }
+        }
     }
     
-    // UI setting
+    func displayError(with type: Int) {
+        self.messageLable.text = LoginErrors[type]
+    }
+    
     func setUI() {
         self.messageLable.isHidden = true
         self.activityIndicator.isHidden = true
-        //        self.ui.setNavigationBarUI(vc: self)
-        //        self.ui.setButtonUI(bn: self.loginButton)
-        //        self.ui.setButtonUI(bn: self.signupButton)
-        //        self.ui.setTextFieldUI(tf: self.emailField)
-        //        self.ui.setTextFieldUI(tf: self.passwordField)
+        self.ui.setNavigationBarUI(on: self)
+        self.ui.setKeyboardDismiss(on: self)
     }
-    
-    func setupKeyboardDismiss() {
-        // TODO: put this into UIcontroller
-        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
-        tap.cancelsTouchesInView = false
-        self.view.addGestureRecognizer(tap)
-    }
-    
-    // VC Mavigation
+
     func navigateToSignup() {
         // TODO:
     }

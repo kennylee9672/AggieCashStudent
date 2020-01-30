@@ -119,39 +119,91 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="v6X-Ao-n3f">
-                                <rect key="frame" x="10" y="294" width="394" height="78"/>
+                                <rect key="frame" x="10" y="291" width="394" height="120"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6U8-7a-WdV">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="fCv-bo-OVA"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8r-dI-rda">
-                                        <rect key="frame" x="0.0" y="44" width="394" height="34"/>
+                                        <rect key="frame" x="0.0" y="50" width="394" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="HFy-uP-5zt"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nM0-ez-svg">
+                                        <rect key="frame" x="0.0" y="100" width="394" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="9Gn-xo-zYa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cfF-QX-Z9n">
-                                <rect key="frame" x="100" y="422" width="214" height="32"/>
+                                <rect key="frame" x="100" y="461" width="214" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="BQr-RE-v9f"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Login"/>
                                     <segment title="Signup"/>
                                 </segments>
+                                <connections>
+                                    <action selector="touchSegmentControl:" destination="6ME-TW-lQm" eventType="valueChanged" id="JEG-iK-Cly"/>
+                                </connections>
                             </segmentedControl>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="U1i-6j-Iy7">
+                                <rect key="frame" x="197" y="526" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aggie-logo" translatesAutoresizingMaskIntoConstraints="NO" id="g9v-by-VW6">
+                                <rect key="frame" x="0.0" y="88" width="414" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="O1A-Nv-Syk"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0d-rC-zRg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <items>
+                                    <navigationItem id="46W-v5-oo2"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="U1i-6j-Iy7" firstAttribute="top" secondItem="cfF-QX-Z9n" secondAttribute="bottom" constant="31" id="541-m0-fQT"/>
                             <constraint firstItem="UZa-iJ-YrI" firstAttribute="trailing" secondItem="cfF-QX-Z9n" secondAttribute="trailing" constant="100" id="7uU-JC-5AS"/>
+                            <constraint firstItem="o0d-rC-zRg" firstAttribute="leading" secondItem="g9v-by-VW6" secondAttribute="leading" id="9ul-Ki-a0l"/>
                             <constraint firstItem="UZa-iJ-YrI" firstAttribute="trailing" secondItem="v6X-Ao-n3f" secondAttribute="trailing" constant="10" id="DX9-9E-xDa"/>
                             <constraint firstItem="v6X-Ao-n3f" firstAttribute="leading" secondItem="UZa-iJ-YrI" secondAttribute="leading" constant="10" id="FYm-w7-QRr"/>
-                            <constraint firstItem="v6X-Ao-n3f" firstAttribute="top" secondItem="UZa-iJ-YrI" secondAttribute="top" constant="250" id="M7o-fe-FMg"/>
+                            <constraint firstItem="o0d-rC-zRg" firstAttribute="trailing" secondItem="g9v-by-VW6" secondAttribute="trailing" id="Gnv-SH-6aH"/>
+                            <constraint firstItem="g9v-by-VW6" firstAttribute="top" secondItem="o0d-rC-zRg" secondAttribute="bottom" constant="44" id="J6T-6P-AXD"/>
                             <constraint firstItem="cfF-QX-Z9n" firstAttribute="leading" secondItem="UZa-iJ-YrI" secondAttribute="leading" constant="100" id="aAY-LW-msM"/>
+                            <constraint firstItem="UZa-iJ-YrI" firstAttribute="trailing" secondItem="U1i-6j-Iy7" secondAttribute="trailing" constant="197" id="bfb-Ke-5T3"/>
+                            <constraint firstItem="g9v-by-VW6" firstAttribute="trailing" secondItem="UZa-iJ-YrI" secondAttribute="trailing" id="e82-Rh-4HQ"/>
+                            <constraint firstItem="v6X-Ao-n3f" firstAttribute="top" secondItem="g9v-by-VW6" secondAttribute="bottom" constant="19" id="g8i-kD-8IK"/>
+                            <constraint firstItem="U1i-6j-Iy7" firstAttribute="leading" secondItem="UZa-iJ-YrI" secondAttribute="leading" constant="197" id="pbN-sa-8Dj"/>
+                            <constraint firstItem="g9v-by-VW6" firstAttribute="leading" secondItem="UZa-iJ-YrI" secondAttribute="leading" id="r06-L7-GKv"/>
+                            <constraint firstItem="UZa-iJ-YrI" firstAttribute="bottom" secondItem="U1i-6j-Iy7" secondAttribute="bottom" constant="316" id="uZO-NG-Ph6"/>
                             <constraint firstItem="cfF-QX-Z9n" firstAttribute="top" secondItem="v6X-Ao-n3f" secondAttribute="bottom" constant="50" id="zte-H9-fAm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UZa-iJ-YrI"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="U1i-6j-Iy7" id="Dme-fd-Wco"/>
+                        <outlet property="emailField" destination="6U8-7a-WdV" id="w46-Ly-3q2"/>
+                        <outlet property="loginOrSignupButton" destination="cfF-QX-Z9n" id="Eji-Oy-kXV"/>
+                        <outlet property="messageLable" destination="nM0-ez-svg" id="V4d-yq-cB3"/>
+                        <outlet property="passwordField" destination="b8r-dI-rda" id="Qio-BJ-fY6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEl-EZ-mAj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -192,6 +244,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="aggie-logo" width="671.5" height="671.5"/>
         <image name="paperplane" catalog="system" width="64" height="60"/>
         <image name="person" catalog="system" width="64" height="58"/>
     </resources>

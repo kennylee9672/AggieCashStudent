@@ -12,13 +12,13 @@ class UIcontroller {
     
     let IMAGE_MAX: Int64 =  1 * 1024 * 1024
     
-    func setNavigationBarUI(vc: UIViewController) {
+    func setNavigationBarUI(on vc: UIViewController) {
         let nvBar = vc.navigationController?.navigationBar
         nvBar?.barStyle = .default
         nvBar?.tintColor = UIColor.init(displayP3Red: 0.22, green: 0.50, blue: 0.54, alpha: 1.0)
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 34, height: 34))
         imageView.contentMode = .scaleAspectFit
-        let image = UIImage(named: "default")
+        let image = UIImage(named: "aggie-logo")
         imageView.image = image
         vc.navigationItem.titleView = imageView
     }
@@ -105,6 +105,13 @@ class UIcontroller {
         } else {
             tv.tableFooterView = spinner
         }
+    }
+    
+    // Keyboard Dismission
+    func setKeyboardDismiss(on vc: UIViewController) {
+        let tap = UITapGestureRecognizer(target: vc.view, action: #selector(UIView.endEditing))
+        tap.cancelsTouchesInView = false
+        vc.view.addGestureRecognizer(tap)
     }
 }
 
