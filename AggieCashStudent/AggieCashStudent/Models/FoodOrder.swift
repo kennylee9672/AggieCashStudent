@@ -7,44 +7,30 @@
 //
 import Foundation
 
-class FoodOrder {
-    var foodTruck: String
-    var itemName: [String]
-    var orderNumber: Int
-    var itemPrice: [Int]
-    var totalPrice: Double
-    // consider pickupTime format, Int (minutes) or String (time)
-    var pickupTime: Int
- 
-
+class FoodTruck {
+    var foodTruckName: String
+    
     init() {
-        self.foodTruck = ""
-        self.itemName = []
-        self.orderNumber = 0
-        self.itemPrice = []
-        self.totalPrice = 0.0
-        self.pickupTime = 0
+        self.foodTruckName = ""
     }
-//
-//    init(name: String) {
-//        self.fullName = name
-//        self.totalSpent = 0.0
-//        self.giftsPurchased = [Gifts]()
-//        self.totalGifts = 0
-//    }
-//    class Gifts {
-//        var giftName: String
-//        var giftPrice: Double
-//
-//        init() {
-//            self.giftName = ""
-//            self.giftPrice = 0.0
-//        }
-//
-//        init(gift: String, price: Double) {
-//            self.giftName = gift
-//            self.giftPrice = price
-//        }
-//    }
 
+    class FoodOrder {
+        var itemNameQty: [String:Int]
+        var itemPrice: [Double]
+        var totalPrice: Double
+        var orderNumber: Int
+        // consider pickupTime format, Int (minutes) or String (time)
+        var pickupTime: Int
+        
+        
+        init() {
+            //               self.foodTruck = ""
+            self.itemNameQty = ["":0]
+            self.itemPrice = []
+            self.totalPrice = 0.0
+            self.orderNumber = 0
+            self.pickupTime = 0
+        }
+    }
+    
 }

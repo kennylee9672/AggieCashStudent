@@ -209,10 +209,10 @@
             </objects>
             <point key="canvasLocation" x="-1697.1014492753625" y="237.72321428571428"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home Tab Bar View Controller-->
         <scene sceneID="8bb-kE-sPs">
             <objects>
-                <tabBarController id="gyW-fj-MMg" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeTabBarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gyW-fj-MMg" customClass="HomeTabBarViewController" customModule="AggieCashStudent" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7iV-9f-BTy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
