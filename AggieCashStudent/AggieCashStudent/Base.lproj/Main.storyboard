@@ -7,6 +7,48 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Orders-->
+        <scene sceneID="sr0-Fz-2SD">
+            <objects>
+                <viewController storyboardIdentifier="OrdersViewController" id="Lux-DP-jtz" customClass="OrdersViewController" customModule="AggieCashStudent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pMh-Mq-D3s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ETk-Yo-apH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Upcoming"/>
+                                    <segment title="Past Orders"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wpa-oW-ihZ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Orders" image="smallcircle.fill.circle" catalog="system" id="jrf-S6-wJP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mkd-0E-BGs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-785.50724637681162" y="945.53571428571422"/>
+        </scene>
+        <!--Cart-->
+        <scene sceneID="RWe-o6-Nui">
+            <objects>
+                <viewController storyboardIdentifier="CartViewController" id="L4S-cR-sDy" customClass="CartViewController" customModule="AggieCashStudent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IhF-rq-ux8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oKx-RP-UiA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" id="kSz-We-YvW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EmY-Wd-MXB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3" y="953"/>
+        </scene>
         <!--ProfileViewController-->
         <scene sceneID="Xhy-96-baQ">
             <objects>
@@ -39,6 +81,16 @@
                                 <rect key="frame" x="0.0" y="372" width="414" height="524"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="t4f-iD-y78">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t4f-iD-y78" id="Cdo-qc-tbT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-Nf-0e4">
                                 <rect key="frame" x="185" y="236" width="41" height="20.5"/>
@@ -219,10 +271,10 @@
             </objects>
             <point key="canvasLocation" x="-1697.1014492753625" y="237.72321428571428"/>
         </scene>
-        <!--Home Tab Bar View Controller-->
+        <!--CartViewController-->
         <scene sceneID="8bb-kE-sPs">
             <objects>
-                <tabBarController storyboardIdentifier="HomeTabBarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gyW-fj-MMg" customClass="HomeTabBarViewController" customModule="AggieCashStudent" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeTabBarViewController" title="CartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gyW-fj-MMg" customClass="HomeTabBarViewController" customModule="AggieCashStudent" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7iV-9f-BTy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -231,6 +283,8 @@
                     <connections>
                         <segue destination="hfX-qt-5Ve" kind="relationship" relationship="viewControllers" id="umj-7S-of4"/>
                         <segue destination="UmN-Oc-z1g" kind="relationship" relationship="viewControllers" id="ogX-ck-EpD"/>
+                        <segue destination="Lux-DP-jtz" kind="relationship" relationship="viewControllers" id="MPc-eW-wPl"/>
+                        <segue destination="L4S-cR-sDy" kind="relationship" relationship="viewControllers" id="88D-cK-yZh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4I-5w-UxQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -255,7 +309,9 @@
     </scenes>
     <resources>
         <image name="aggie-logo" width="671.5" height="671.5"/>
+        <image name="cart" catalog="system" width="64" height="50"/>
         <image name="paperplane" catalog="system" width="64" height="60"/>
         <image name="person" catalog="system" width="64" height="58"/>
+        <image name="smallcircle.fill.circle" catalog="system" width="64" height="60"/>
     </resources>
 </document>

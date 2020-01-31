@@ -21,10 +21,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aggie-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Jr1-wN-f1O">
+                                <rect key="frame" x="137" y="299" width="140" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="7qi-G0-eod" firstAttribute="top" secondItem="Jr1-wN-f1O" secondAttribute="bottom" constant="8.5" id="1hK-VM-a70"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jr1-wN-f1O" secondAttribute="trailing" constant="137" id="HKc-Sa-J41"/>
+                            <constraint firstItem="Jr1-wN-f1O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="O7p-LW-3Ib"/>
                             <constraint firstItem="7qi-G0-eod" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RdI-2E-RXu"/>
+                            <constraint firstItem="Jr1-wN-f1O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="255" id="fH9-6v-xpk"/>
                             <constraint firstItem="7qi-G0-eod" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="pDp-Jr-RS2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -32,7 +39,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aggie-logo" width="671.5" height="671.5"/>
+    </resources>
 </document>
