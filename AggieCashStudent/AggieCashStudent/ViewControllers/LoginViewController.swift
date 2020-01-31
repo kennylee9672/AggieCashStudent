@@ -8,19 +8,23 @@
 
 import UIKit
 import FirebaseAuth
+import GoogleSignIn
+import Firebase
 
 let INVALID_INFO = 0
 let NIL_INFO = 1
 let VERIFY_ERR = 2
 let DEFAULT_ERR = 3
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, GIDSignInDelegate {
+    
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var messageLable: UILabel!
     @IBOutlet weak var loginOrSignupButton: UISegmentedControl!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    //    @IBOutlet weak var signInButton: GIDSignInButton!
     
     let ui = UIcontroller()
     let LoginErrors: [Int : String] = [
@@ -35,6 +39,9 @@ class LoginViewController: UIViewController {
      */
     override func viewDidLoad() {
         super.viewDidLoad()
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
+        self.setupGoogleSignIn()
         self.setUI()
     }
     
@@ -46,6 +53,11 @@ class LoginViewController: UIViewController {
     /**
      * Button Actions:
      */
+    @IBAction func googleSignInPressed(_ sender: Any) {
+        GIDSignIn.sharedInstance().signIn()
+    }
+    
+    
     @IBAction func touchSegmentControl(_ sender: Any) {
         let index = self.loginOrSignupButton.selectedSegmentIndex
         switch index {
@@ -66,6 +78,7 @@ class LoginViewController: UIViewController {
             break
         }
     }
+    
     
     /**
      * Helper method:
@@ -100,7 +113,7 @@ class LoginViewController: UIViewController {
         self.ui.setNavigationBarUI(on: self)
         self.ui.setKeyboardDismiss(on: self)
     }
-
+    
     func navigateToSignup() {
         // TODO:
     }
@@ -108,8 +121,37 @@ class LoginViewController: UIViewController {
     func navigateToHome() {
         // TODO:
         let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: "HomeTabBarViewController") as? UITabBarController
-
+        
         self.view.window?.rootViewController = homeViewController
         self.view.window?.makeKeyAndVisible()
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
+        guard let auth = user.authentication else { return }
+        let credentials = GoogleAuthProvider.credential(withIDToken: auth.idToken, accessToken: auth.accessToken)
+        Auth.auth().signIn(with: credentials) { (authResult, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            } else {
+                print("Login Successful")
+                self.navigateToHome()
+                // START ACTIVITY INDICATOR HERE
+                
+                //This is where you should add the functionality of successful login
+                //i.e. dismissing this view or push the home view controller etc
+            }
+        }
+    }
+    
+    func setupGoogleSignIn() {
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        
+        // Automatically sign in the user.
+        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
     }
 }
