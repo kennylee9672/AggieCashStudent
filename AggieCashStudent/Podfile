@@ -12,7 +12,7 @@ target 'AggieCashStudent' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
-
+  pod 'GoogleSignIn'
 
   # Pods for AggieCashStudent
 
