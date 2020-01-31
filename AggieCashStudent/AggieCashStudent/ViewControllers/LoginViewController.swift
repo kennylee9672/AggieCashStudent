@@ -140,6 +140,8 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
             } else {
                 print("Login Successful")
                 self.navigateToHome()
+                // START ACTIVITY INDICATOR HERE
+                
                 //This is where you should add the functionality of successful login
                 //i.e. dismissing this view or push the home view controller etc
             }

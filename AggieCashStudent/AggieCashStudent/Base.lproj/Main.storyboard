@@ -178,7 +178,7 @@
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lE2-Hh-d40">
                                 <rect key="frame" x="100" y="444" width="214" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="GOOGLE SIGN IN"/>
                                 <connections>
                                     <action selector="googleSignInPressed:" destination="6ME-TW-lQm" eventType="touchUpInside" id="NfS-dm-EWm"/>
                                 </connections>
