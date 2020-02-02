@@ -11,46 +11,56 @@ import Foundation
 class Item {
     var name = ""
     var price = 0.0
+    var seller: String
     
     init() {
         self.name = "Item Name"
         self.price = 0.0
+        self.seller = "00000000" //seller's id
     }
 }
 
 class Order {
-    var seller: Seller
-    var buyer: Buyer
-    var item: [Item]
+    var items: [String]
+    var buyer: String 
+    var seller: String
+    var time: String
     
+    // Default constructor
     init() {
-        self.seller = Seller()
-        self.buyer = Buyer()
-        self.item = []
+        self.items = [] //item's ids
+        self.buyer = "00000000" //buyer's id
+        self.seller = "00000000" //seller's id
+        self.time = "00:00"
     }
     
-//    // Parsing
-//    init(data:[String: Any]) {
-//        if let seller  = data["seller"]
-//
-//
-//        self.seller = data["seller"]
-//        self.buyer = data["buyer"]
-//        self.item = data["item"]
-//    }
-//
-//    init(by seller: Seller, to buyer: Buyer, with items: [Item]) {
-//        self.seller = seller
-//        self.buyer = buyer
-//        self.item = items
-//    }
-//
-//    func printOrder() {
-//        print("=======================")
-//        //print("uid: \(self.uid)")
-//        print("seller: \(self.seller)")
-//        print("buyer: \(self.buyer)")
-//        print("item: \(self.item)")
-//        print("=======================")
-//    }
+    // Custom constructor
+    init(by seller: String, to buyer: String, with items: [String], at time: String) {
+        self.items = items
+        self.buyer = buyer
+        self.seller = seller
+        self.time = time
+    }
+    
+    // Parsing
+    init(data:[String: Any]) {
+        if let res = data["items"] as? [String] {
+            self.items = res
+        } else {
+            self.items = []
+        }
+        self.seller = data["seller"] as! String
+        self.buyer = data["buyer"] as! String
+        self.time = data["time"] as! String
+    }
+    
+    func printOrder() {
+        print("=======================")
+        //print("uid: \(self.uid)")
+        print("itemsID: \(self.items)")
+        print("buyerID: \(self.buyer)")
+        print("sellerID: \(self.seller)")
+        print("at: \(self.time)")
+        print("=======================")
+    }
 }

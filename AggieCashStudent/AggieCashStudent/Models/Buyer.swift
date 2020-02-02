@@ -8,26 +8,45 @@
 import Foundation
 
 class Buyer {
+    var uid: String
     var name: String
     var email: String
-    var orderHistory: [Order]
+    var orderHistory: [String]
     
+    // Default constructor
     init() {
-        self.name = ""
-        self.email = ""
+        self.uid = "00000000"
+        self.name = "Buyer Name"
+        self.email = "buyer@gmail.com"
         self.orderHistory = []
     }
     
-//    class orderHistory {
-//        var foodTruckName: [String]
-//        // restructure..
-//        // item name & price
-//        var pastOrders: [String:Double]
-//        
-//        init() {
-//            self.foodTruckName = [""]
-//            self.pastOrders = ["":0.0]
-//        }
-//    }
-
+    // Custom constructor
+    init(uid: String, name: String, email: String) {
+        self.uid = uid
+        self.name = name
+        self.email = email
+        self.orderHistory = []
+    }
+    
+    // Parsing
+    init(data: [String: Any]) {
+        if let res = data["orderHistory"] as? [String] {
+            self.orderHistory = res
+        } else {
+            self.orderHistory = []
+        }
+        self.uid = data["uid"] as! String
+        self.name = data["name"] as! String
+        self.email = data["email"] as! String
+    }
+    
+    func printOrder() {
+        print("=======================")
+        print("uid: \(self.uid)")
+        print("name: \(self.name)")
+        print("email: \(self.email)")
+        print("orderHistory: \(self.orderHistory)")
+        print("=======================")
+    }
 }

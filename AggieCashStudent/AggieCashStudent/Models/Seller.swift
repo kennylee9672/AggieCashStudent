@@ -9,41 +9,44 @@ import Foundation
 
 class Seller {
     var uid: String
+    var name: String
     var email: String
-    var accountName: String
-    var orderHistory: [Order]
+    var orderHistory: [String]
     
+   // Default constructor
     init() {
         self.uid = "00000000"
-        self.email = "default@gamil.com"
-        self.accountName = "Default"
+        self.name = "Buyer Name"
+        self.email = "buyer@gmail.com"
         self.orderHistory = []
     }
-//
-//    // Parsing
-//    init(data:[String: Any]) {
-//
-//    }
-
     
+    // Custom constructor
+    init(uid: String, name: String, email: String) {
+        self.uid = uid
+        self.name = name
+        self.email = email
+        self.orderHistory = []
+    }
+    
+    // Parsing
+    init(data: [String: Any]) {
+        if let res = data["orderHistory"] as? [String] {
+            self.orderHistory = res
+        } else {
+            self.orderHistory = []
+        }
+        self.uid = data["uid"] as! String
+        self.name = data["name"] as! String
+        self.email = data["email"] as! String
+    }
+    
+    func printOrder() {
+        print("=======================")
+        print("uid: \(self.uid)")
+        print("name: \(self.name)")
+        print("email: \(self.email)")
+        print("orderHistory: \(self.orderHistory)")
+        print("=======================")
+    }
 }
-
-
-//    class FoodOrder {
-//        var itemNameQty: [String:Int]
-//        var itemPrice: [Double]
-//        var totalPrice: Double
-//        var orderNumber: Int
-//        // consider pickupTime format, Int (minutes) or String (time)
-//        var pickupTime: Int
-//
-//
-//        init() {
-//            //               self.foodTruck = ""
-//            self.itemNameQty = ["":0]
-//            self.itemPrice = []
-//            self.totalPrice = 0.0
-//            self.orderNumber = 0
-//            self.pickupTime = 0
-//        }
-//    }
