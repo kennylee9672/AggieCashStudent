@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -126,14 +127,45 @@
                     <view key="view" contentMode="scaleToFill" id="D7P-U9-bVc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="t5R-DX-e4X">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ibg-2Q-F3b">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="16"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oyv-5F-yfy">
+                                        <rect key="frame" x="16" y="16" width="100" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mvW-30-2gV">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="t5R-DX-e4X" firstAttribute="bottom" secondItem="OX2-Ub-sx1" secondAttribute="bottom" id="HJ8-2T-33o"/>
+                            <constraint firstItem="t5R-DX-e4X" firstAttribute="leading" secondItem="OX2-Ub-sx1" secondAttribute="leading" id="LYz-dt-y8V"/>
+                            <constraint firstItem="t5R-DX-e4X" firstAttribute="trailing" secondItem="OX2-Ub-sx1" secondAttribute="trailing" id="rHd-5I-iOd"/>
+                            <constraint firstItem="t5R-DX-e4X" firstAttribute="top" secondItem="OX2-Ub-sx1" secondAttribute="top" id="wJA-Bf-Ypf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OX2-Ub-sx1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Menu" image="paperplane" catalog="system" id="m4D-Tx-mgN"/>
+                    <connections>
+                        <outlet property="collectionView" destination="t5R-DX-e4X" id="FnS-Ga-pwH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fIL-2f-Yce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="779" y="-87"/>
+            <point key="canvasLocation" x="778.26086956521749" y="-87.053571428571431"/>
         </scene>
         <!--MenuViewController-->
         <scene sceneID="pa7-LQ-9iw">

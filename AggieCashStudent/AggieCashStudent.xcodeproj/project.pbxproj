@@ -27,6 +27,8 @@
 		C5F0473323E3EC6700F445A4 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0473223E3EC6700F445A4 /* CartViewController.swift */; };
 		C5F0473523E3F11800F445A4 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0473423E3F11800F445A4 /* OrdersViewController.swift */; };
 		CC6DC2A9B28C6DD5746A7F0A /* Pods_AggieCashStudent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B5EDF0D35393AE23496DBB /* Pods_AggieCashStudent.framework */; };
+		EB98405323ECBC29005A85D0 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB98405123ECBC29005A85D0 /* ItemCell.swift */; };
+		EB98405423ECBC29005A85D0 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB98405223ECBC29005A85D0 /* ItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		C550724423DE2205006DFA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5F0473223E3EC6700F445A4 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		C5F0473423E3F11800F445A4 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		EB98405123ECBC29005A85D0 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		EB98405223ECBC29005A85D0 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 		C550723523DE2202006DFA37 /* AggieCashStudent */ = {
 			isa = PBXGroup;
 			children = (
+				EB98404C23ECBA70005A85D0 /* ItemCell */,
 				5B0AD92E23E3A4C900F2C13C /* Models */,
 				ADF3200623E2AD69008CF7DB /* ViewControllers */,
 				ADF31FF823E2AA30008CF7DB /* Podfile */,
@@ -136,6 +141,15 @@
 				5BEE32F723E2ACDD0038FE6C /* GoogleService-Info.plist */,
 			);
 			path = AggieCashStudent;
+			sourceTree = "<group>";
+		};
+		EB98404C23ECBA70005A85D0 /* ItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				EB98405123ECBC29005A85D0 /* ItemCell.swift */,
+				EB98405223ECBC29005A85D0 /* ItemCell.xib */,
+			);
+			path = ItemCell;
 			sourceTree = "<group>";
 		};
 		F408710AA66898F497D2B647 /* Frameworks */ = {
@@ -209,6 +223,7 @@
 			files = (
 				C550724323DE2205006DFA37 /* LaunchScreen.storyboard in Resources */,
 				C550724023DE2205006DFA37 /* Assets.xcassets in Resources */,
+				EB98405423ECBC29005A85D0 /* ItemCell.xib in Resources */,
 				5BEE32F823E2ACDD0038FE6C /* GoogleService-Info.plist in Resources */,
 				ADF31FF923E2AA30008CF7DB /* Podfile in Resources */,
 				C550723E23DE2202006DFA37 /* Main.storyboard in Resources */,
@@ -295,6 +310,7 @@
 				5B0AD93423E3B18F00F2C13C /* HomeTabBarViewController.swift in Sources */,
 				C550723923DE2202006DFA37 /* SceneDelegate.swift in Sources */,
 				ADF3200323E2ABD8008CF7DB /* MenuViewController.swift in Sources */,
+				EB98405323ECBC29005A85D0 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2J43M5H25R;
 				INFOPLIST_FILE = AggieCashStudent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,6 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2J43M5H25R;
 				INFOPLIST_FILE = AggieCashStudent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
