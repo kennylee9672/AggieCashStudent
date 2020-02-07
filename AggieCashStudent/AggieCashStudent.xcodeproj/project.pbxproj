@@ -24,6 +24,7 @@
 		C550723E23DE2202006DFA37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C550723C23DE2202006DFA37 /* Main.storyboard */; };
 		C550724023DE2205006DFA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C550723F23DE2205006DFA37 /* Assets.xcassets */; };
 		C550724323DE2205006DFA37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C550724123DE2205006DFA37 /* LaunchScreen.storyboard */; };
+		C564C16423ECE2CB00AAFD6B /* MenuCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C564C16323ECE2CB00AAFD6B /* MenuCellViewController.swift */; };
 		C5F0473323E3EC6700F445A4 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0473223E3EC6700F445A4 /* CartViewController.swift */; };
 		C5F0473523E3F11800F445A4 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0473423E3F11800F445A4 /* OrdersViewController.swift */; };
 		CC6DC2A9B28C6DD5746A7F0A /* Pods_AggieCashStudent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B5EDF0D35393AE23496DBB /* Pods_AggieCashStudent.framework */; };
@@ -54,6 +55,7 @@
 		C550723F23DE2205006DFA37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C550724223DE2205006DFA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C550724423DE2205006DFA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C564C16323ECE2CB00AAFD6B /* MenuCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCellViewController.swift; sourceTree = "<group>"; };
 		C5F0473223E3EC6700F445A4 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		C5F0473423E3F11800F445A4 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		EB98405123ECBC29005A85D0 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				5B0AD93323E3B18F00F2C13C /* HomeTabBarViewController.swift */,
 				C5F0473223E3EC6700F445A4 /* CartViewController.swift */,
 				C5F0473423E3F11800F445A4 /* OrdersViewController.swift */,
+				C564C16323ECE2CB00AAFD6B /* MenuCellViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				ADF3200123E2ABCB008CF7DB /* SettingViewController.swift in Sources */,
 				ADF3200823E2B082008CF7DB /* UIcontroller.swift in Sources */,
 				5B0AD93623E3C45100F2C13C /* FoodTruck.swift in Sources */,
+				C564C16423ECE2CB00AAFD6B /* MenuCellViewController.swift in Sources */,
 				5B0AD93423E3B18F00F2C13C /* HomeTabBarViewController.swift in Sources */,
 				C550723923DE2202006DFA37 /* SceneDelegate.swift in Sources */,
 				ADF3200323E2ABD8008CF7DB /* MenuViewController.swift in Sources */,

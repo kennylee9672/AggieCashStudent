@@ -1,26 +1,15 @@
 //
-//  MenuViewController.swift
+//  MenuCellViewController.swift
 //  AggieCashStudent
 //
-//  Created by Kenny Li on 1/29/20.
+//  Created by Adila on 2/6/20.
 //  Copyright © 2020 AggieCashStudent. All rights reserved.
 //
 
 import UIKit
 
-class MenuViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5;
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell")
-        return cell
-        
-    }
-    
+class MenuCellViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
