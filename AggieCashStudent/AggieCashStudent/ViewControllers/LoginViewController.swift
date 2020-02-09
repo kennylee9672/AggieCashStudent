@@ -33,16 +33,31 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
         VERIFY_ERR : "Pleas check your network.",
         DEFAULT_ERR : "Error."
     ]
+    var verificationID: String = ""
     
     /**
      * ViewController Inialization:
      */
     override func viewDidLoad() {
         super.viewDidLoad()
-        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-        GIDSignIn.sharedInstance().delegate = self
-        self.setupGoogleSignIn()
+//        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+//        GIDSignIn.sharedInstance().delegate = self
+//        self.setupGoogleSignIn()
         self.setUI()
+        
+        // Phone number signin
+        PhoneAuthProvider.provider().verifyPhoneNumber("+16507668662", uiDelegate: nil) { (verificationID, error) in
+          if let error = error {
+            //self.showMessagePrompt(error.localizedDescription)
+            print("DEBUG: \(error)")
+            return
+          }
+          // Sign iself。n using the verificationID and the code sent to the user
+          // ...
+            print("DEBUG: Sucessfully send code to user")
+            UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
+            self.verificationID = UserDefaults.standard.string(forKey: "authVerificationID")!
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -58,25 +73,39 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
     }
     
     
-    @IBAction func touchSegmentControl(_ sender: Any) {
-        let index = self.loginOrSignupButton.selectedSegmentIndex
-        switch index {
-        case 0:
-            if let email = self.emailField.text,
-                let password = self.passwordField.text {
-                verifyLogin(email: email, password: password)
-            }
-            else {
-                self.displayError(with: NIL_INFO)
-            }
-            break
-        case 1:
-            navigateToSignup()
-            break
-        default:
-            self.displayError(with: DEFAULT_ERR)
-            break
+    @IBAction func touch(_ sender: Any) {
+        let credential = PhoneAuthProvider.provider().credential(
+            withVerificationID: self.verificationID,
+            verificationCode: self.emailField.text!)
+        
+        Auth.auth().signIn(with: credential) { (authResult, error) in
+          if let error = error {
+            print("DEBUG: \(error)")
+            return
+          }
+            print("DEBUG: Sucessfully sign in user")
+          // User is signed in
+          // ...
         }
+        
+//        let index = self.loginOrSignupButton.selectedSegmentIndex
+//        switch index {
+//        case 0:
+//            if let email = self.emailField.text,
+//                let password = self.passwordField.text {
+//                verifyLogin(email: email, password: password)
+//            }
+//            else {
+//                self.displayError(with: NIL_INFO)
+//            }
+//            break
+//        case 1:
+//            navigateToSignup()
+//            break
+//        default:
+//            self.displayError(with: DEFAULT_ERR)
+//            break
+//        }
     }
     
     

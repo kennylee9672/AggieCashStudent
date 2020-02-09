@@ -36,6 +36,7 @@
 		5BEE32F723E2ACDD0038FE6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7285358FF1621993D1DCDFAC /* Pods-AggieCashStudent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggieCashStudent.release.xcconfig"; path = "Target Support Files/Pods-AggieCashStudent/Pods-AggieCashStudent.release.xcconfig"; sourceTree = "<group>"; };
 		AD0C806C23E3DF03001340A1 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		ADE444EE23F0B16B00E5D3BA /* AggieCashStudent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AggieCashStudent.entitlements; sourceTree = "<group>"; };
 		ADF31FF823E2AA30008CF7DB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ADF31FFA23E2AB9C008CF7DB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		ADF31FFC23E2ABAB008CF7DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +121,7 @@
 		C550723523DE2202006DFA37 /* AggieCashStudent */ = {
 			isa = PBXGroup;
 			children = (
+				ADE444EE23F0B16B00E5D3BA /* AggieCashStudent.entitlements */,
 				5B0AD92E23E3A4C900F2C13C /* Models */,
 				ADF3200623E2AD69008CF7DB /* ViewControllers */,
 				ADF31FF823E2AA30008CF7DB /* Podfile */,
@@ -435,14 +437,15 @@
 			baseConfigurationReference = B67B1A559C5C9B6D5D31C664 /* Pods-AggieCashStudent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AggieCashStudent/AggieCashStudent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2J43M5H25R;
+				DEVELOPMENT_TEAM = VS9S27J65P;
 				INFOPLIST_FILE = AggieCashStudent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ucdavis.cs.AggieCashStudent.dc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucdavis.cs.AggieCashStudent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,14 +457,15 @@
 			baseConfigurationReference = 7285358FF1621993D1DCDFAC /* Pods-AggieCashStudent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AggieCashStudent/AggieCashStudent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2J43M5H25R;
+				DEVELOPMENT_TEAM = VS9S27J65P;
 				INFOPLIST_FILE = AggieCashStudent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ucdavis.cs.AggieCashStudent.dc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucdavis.cs.AggieCashStudent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

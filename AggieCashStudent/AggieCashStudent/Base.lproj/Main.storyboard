@@ -188,6 +188,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" red="0.49804270270000001" green="0.49803286790000001" blue="0.49803954360000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="touch:" destination="6ME-TW-lQm" eventType="touchUpInside" id="G6f-Dz-BHc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
