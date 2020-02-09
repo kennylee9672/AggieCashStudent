@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aou-P8-Yb8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gyW-fj-MMg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -84,11 +84,16 @@
         <!--Account-->
         <scene sceneID="u1L-al-n1o">
             <objects>
-                <tableViewController id="W8D-ej-6kv" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SettingTableViewController" id="W8D-ej-6kv" customClass="SettingTableViewController" customModule="AggieCashStudent" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RCB-gm-Vyl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WYc-PX-IBg">
+                            <rect key="frame" x="0.0" y="376" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                        </button>
                         <sections>
                             <tableViewSection headerTitle="Account Settings" id="qbz-E4-zZ4">
                                 <cells>
@@ -231,10 +236,6 @@
                                 </cells>
                             </tableViewSection>
                         </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="W8D-ej-6kv" id="saJ-ee-rhc"/>
-                            <outlet property="delegate" destination="W8D-ej-6kv" id="TMn-FB-igq"/>
-                        </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Account" image="person" catalog="system" id="W0T-4r-Cy2"/>
                 </tableViewController>
@@ -242,10 +243,10 @@
             </objects>
             <point key="canvasLocation" x="785.50724637681162" y="580.58035714285711"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Profile Table View Controller-->
         <scene sceneID="dDr-CS-UHm">
             <objects>
-                <tableViewController storyboardIdentifier="SettingViewController" id="aou-P8-Yb8" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ProfileTableViewController" id="aou-P8-Yb8" customClass="ProfileTableViewController" customModule="AggieCashStudent" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sEF-sF-Aau">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,7 +272,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aggie-logo" translatesAutoresizingMaskIntoConstraints="NO" id="EV3-yX-HUi">
-                                                    <rect key="frame" x="137" y="32" width="141" height="123"/>
+                                                    <rect key="frame" x="136.5" y="32" width="141" height="123"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="141" id="Hmc-t4-sk0"/>
                                                     </constraints>
@@ -692,7 +693,6 @@
                         <segue destination="hfX-qt-5Ve" kind="relationship" relationship="viewControllers" id="umj-7S-of4"/>
                         <segue destination="Lux-DP-jtz" kind="relationship" relationship="viewControllers" id="MPc-eW-wPl"/>
                         <segue destination="L4S-cR-sDy" kind="relationship" relationship="viewControllers" id="88D-cK-yZh"/>
-                        <segue destination="W8D-ej-6kv" kind="relationship" relationship="viewControllers" id="Kfp-bS-dVt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y4I-5w-UxQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

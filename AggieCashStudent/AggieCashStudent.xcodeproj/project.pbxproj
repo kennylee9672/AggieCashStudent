@@ -14,7 +14,6 @@
 		ADF31FF923E2AA30008CF7DB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = ADF31FF823E2AA30008CF7DB /* Podfile */; };
 		ADF31FFB23E2AB9C008CF7DB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF31FFA23E2AB9C008CF7DB /* SignUpViewController.swift */; };
 		ADF31FFD23E2ABAB008CF7DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF31FFC23E2ABAB008CF7DB /* LoginViewController.swift */; };
-		ADF31FFF23E2ABBD008CF7DB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF31FFE23E2ABBD008CF7DB /* ProfileViewController.swift */; };
 		ADF3200123E2ABCB008CF7DB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF3200023E2ABCB008CF7DB /* SettingViewController.swift */; };
 		ADF3200323E2ABD8008CF7DB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF3200223E2ABD8008CF7DB /* MenuViewController.swift */; };
 		ADF3200523E2AC64008CF7DB /* VendorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF3200423E2AC64008CF7DB /* VendorViewController.swift */; };
@@ -25,6 +24,8 @@
 		C550724023DE2205006DFA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C550723F23DE2205006DFA37 /* Assets.xcassets */; };
 		C550724323DE2205006DFA37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C550724123DE2205006DFA37 /* LaunchScreen.storyboard */; };
 		C564C16423ECE2CB00AAFD6B /* MenuCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C564C16323ECE2CB00AAFD6B /* MenuCellViewController.swift */; };
+		C58D0EF823F0CFC700F0B1AF /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D0EF723F0CFC700F0B1AF /* SettingTableViewController.swift */; };
+		C58D0EFA23F0D00D00F0B1AF /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D0EF923F0D00D00F0B1AF /* ProfileTableViewController.swift */; };
 		C5F0473323E3EC6700F445A4 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0473223E3EC6700F445A4 /* CartViewController.swift */; };
 		C5F0473523E3F11800F445A4 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0473423E3F11800F445A4 /* OrdersViewController.swift */; };
 		CC6DC2A9B28C6DD5746A7F0A /* Pods_AggieCashStudent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B5EDF0D35393AE23496DBB /* Pods_AggieCashStudent.framework */; };
@@ -42,7 +43,6 @@
 		ADF31FF823E2AA30008CF7DB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ADF31FFA23E2AB9C008CF7DB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		ADF31FFC23E2ABAB008CF7DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		ADF31FFE23E2ABBD008CF7DB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ADF3200023E2ABCB008CF7DB /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		ADF3200223E2ABD8008CF7DB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		ADF3200423E2AC64008CF7DB /* VendorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +56,8 @@
 		C550724223DE2205006DFA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C550724423DE2205006DFA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C564C16323ECE2CB00AAFD6B /* MenuCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCellViewController.swift; sourceTree = "<group>"; };
+		C58D0EF723F0CFC700F0B1AF /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		C58D0EF923F0D00D00F0B1AF /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		C5F0473223E3EC6700F445A4 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		C5F0473423E3F11800F445A4 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		EB98405123ECBC29005A85D0 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
@@ -97,7 +99,6 @@
 			children = (
 				ADF31FFA23E2AB9C008CF7DB /* SignUpViewController.swift */,
 				ADF31FFC23E2ABAB008CF7DB /* LoginViewController.swift */,
-				ADF31FFE23E2ABBD008CF7DB /* ProfileViewController.swift */,
 				ADF3200023E2ABCB008CF7DB /* SettingViewController.swift */,
 				ADF3200223E2ABD8008CF7DB /* MenuViewController.swift */,
 				ADF3200423E2AC64008CF7DB /* VendorViewController.swift */,
@@ -105,6 +106,8 @@
 				C5F0473223E3EC6700F445A4 /* CartViewController.swift */,
 				C5F0473423E3F11800F445A4 /* OrdersViewController.swift */,
 				C564C16323ECE2CB00AAFD6B /* MenuCellViewController.swift */,
+				C58D0EF723F0CFC700F0B1AF /* SettingTableViewController.swift */,
+				C58D0EF923F0D00D00F0B1AF /* ProfileTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -300,18 +303,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B0AD93223E3A4F400F2C13C /* Buyer.swift in Sources */,
-				ADF31FFF23E2ABBD008CF7DB /* ProfileViewController.swift in Sources */,
 				C550723723DE2202006DFA37 /* AppDelegate.swift in Sources */,
 				C5F0473523E3F11800F445A4 /* OrdersViewController.swift in Sources */,
 				ADF3200523E2AC64008CF7DB /* VendorViewController.swift in Sources */,
 				ADF31FFB23E2AB9C008CF7DB /* SignUpViewController.swift in Sources */,
 				ADF31FFD23E2ABAB008CF7DB /* LoginViewController.swift in Sources */,
 				C5F0473323E3EC6700F445A4 /* CartViewController.swift in Sources */,
+				C58D0EFA23F0D00D00F0B1AF /* ProfileTableViewController.swift in Sources */,
 				ADF3200123E2ABCB008CF7DB /* SettingViewController.swift in Sources */,
 				ADF3200823E2B082008CF7DB /* UIcontroller.swift in Sources */,
 				5B0AD93623E3C45100F2C13C /* FoodTruck.swift in Sources */,
 				C564C16423ECE2CB00AAFD6B /* MenuCellViewController.swift in Sources */,
 				5B0AD93423E3B18F00F2C13C /* HomeTabBarViewController.swift in Sources */,
+				C58D0EF823F0CFC700F0B1AF /* SettingTableViewController.swift in Sources */,
 				C550723923DE2202006DFA37 /* SceneDelegate.swift in Sources */,
 				ADF3200323E2ABD8008CF7DB /* MenuViewController.swift in Sources */,
 				EB98405323ECBC29005A85D0 /* ItemCell.swift in Sources */,
