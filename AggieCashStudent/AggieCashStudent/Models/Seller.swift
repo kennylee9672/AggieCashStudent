@@ -1,5 +1,5 @@
 //
-//  Buyer.swift
+//  Seller.swift
 //  AggieCashStudent
 //
 //  Created by Davy Chuon on 1/30/20.
@@ -7,13 +7,13 @@
 //
 import Foundation
 
-class Buyer {
+class Seller {
     var uid: String
     var name: String
     var email: String
     var orderHistory: [String]
     
-    // Default constructor
+   // Default constructor
     init() {
         self.uid = "00000000"
         self.name = "Buyer Name"
