@@ -11,6 +11,8 @@
 		5B0AD93423E3B18F00F2C13C /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0AD93323E3B18F00F2C13C /* HomeTabBarViewController.swift */; };
 		5B0AD93623E3C45100F2C13C /* FoodTruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0AD93523E3C45100F2C13C /* FoodTruck.swift */; };
 		5BEE32F823E2ACDD0038FE6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE32F723E2ACDD0038FE6C /* GoogleService-Info.plist */; };
+		ADDCDF6023F10CB20014B48F /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCDF5F23F10CB20014B48F /* Order.swift */; };
+		ADDCDF6223F10CB90014B48F /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCDF6123F10CB90014B48F /* Seller.swift */; };
 		ADF31FF923E2AA30008CF7DB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = ADF31FF823E2AA30008CF7DB /* Podfile */; };
 		ADF31FFB23E2AB9C008CF7DB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF31FFA23E2AB9C008CF7DB /* SignUpViewController.swift */; };
 		ADF31FFD23E2ABAB008CF7DB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF31FFC23E2ABAB008CF7DB /* LoginViewController.swift */; };
@@ -42,6 +44,8 @@
 		5B0AD93523E3C45100F2C13C /* FoodTruck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTruck.swift; sourceTree = "<group>"; };
 		5BEE32F723E2ACDD0038FE6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7285358FF1621993D1DCDFAC /* Pods-AggieCashStudent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggieCashStudent.release.xcconfig"; path = "Target Support Files/Pods-AggieCashStudent/Pods-AggieCashStudent.release.xcconfig"; sourceTree = "<group>"; };
+		ADDCDF5F23F10CB20014B48F /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		ADDCDF6123F10CB90014B48F /* Seller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
 		ADF31FF823E2AA30008CF7DB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ADF31FFA23E2AB9C008CF7DB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		ADF31FFC23E2ABAB008CF7DB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 		5B0AD92E23E3A4C900F2C13C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ADDCDF6123F10CB90014B48F /* Seller.swift */,
+				ADDCDF5F23F10CB20014B48F /* Order.swift */,
 				5B0AD93523E3C45100F2C13C /* FoodTruck.swift */,
 				5B0AD93123E3A4F300F2C13C /* Buyer.swift */,
 			);
@@ -312,8 +318,10 @@
 				5B0AD93223E3A4F400F2C13C /* Buyer.swift in Sources */,
 				C550723723DE2202006DFA37 /* AppDelegate.swift in Sources */,
 				C58D0F0023F0E25D00F0B1AF /* MenuCell.swift in Sources */,
+				ADDCDF6023F10CB20014B48F /* Order.swift in Sources */,
 				C5F0473523E3F11800F445A4 /* OrdersViewController.swift in Sources */,
 				ADF3200523E2AC64008CF7DB /* VendorViewController.swift in Sources */,
+				ADDCDF6223F10CB90014B48F /* Seller.swift in Sources */,
 				ADF31FFB23E2AB9C008CF7DB /* SignUpViewController.swift in Sources */,
 				ADF31FFD23E2ABAB008CF7DB /* LoginViewController.swift in Sources */,
 				C5F0473323E3EC6700F445A4 /* CartViewController.swift in Sources */,
