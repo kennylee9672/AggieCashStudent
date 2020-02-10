@@ -37,6 +37,7 @@ class LoginViewController: UIViewController {
      */
     @IBAction func touchSend(_ sender: Any) {
         self.sendOTP()
+        
     }
     
     @IBAction func touchSignIn(_ sender: Any) {
@@ -49,7 +50,8 @@ class LoginViewController: UIViewController {
     func sendOTP() {
         print("DEBUG: Sending OTP to user")
         if let str = checkInput() {
-            let phoneNumber = US_CODE + str
+             let phoneNumber = str // With auto fill phonenumber feature
+//            let phoneNumber = US_CODE + str
             PhoneAuthProvider.provider()
                 .verifyPhoneNumber(phoneNumber, uiDelegate: nil) { (verificationID, error) in
                 if let error = error {
@@ -58,15 +60,31 @@ class LoginViewController: UIViewController {
                 }
                 if let id = verificationID {
                     print("DEBUG: Sucessfully send code to user")
+                    self.messageLable.isHidden = true
                     UserDefaults.standard.set(id, forKey: "authVerificationID")
                     self.verificationID = UserDefaults.standard.string(forKey: "authVerificationID")!
+                    
                 }
             }
         }
         return
     }
     
+    @objc func inputChanges(OTPfield: UITextField) {
+        let text = OTPfield.text
+        if text?.utf16.count == 6{
+            activityIndicator.hidesWhenStopped = true
+            self.activityIndicator.startAnimating()
+            self.view.isUserInteractionEnabled = false
+            view.addSubview(activityIndicator)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
+            self.navigateToHome()
+            self.activityIndicator.stopAnimating()
+            }
+        }
+    }
     func signIn() {
+        self.activityIndicator.startAnimating()
         print("DEBUG: Signing in user")
         let credential = PhoneAuthProvider.provider().credential(
             withVerificationID: self.verificationID,
@@ -76,16 +94,21 @@ class LoginViewController: UIViewController {
             if let error = error {
                 print("DEBUG: \(error)")
                 self.displayError()
+                self.activityIndicator.stopAnimating()
                 return
             }
             print("DEBUG: Sucessfully sign in user")
-            self.navigateToHome()
+            self.activityIndicator.stopAnimating()
+//            self.navigateToHome()
         }
     }
     
     func checkInput() -> String? {
         if let str: String = phoneNumberField.text {
             if str.count != PHONE_NUMBER_LEN {
+//                if(str.count == 12 && str.prefix(2) == "+1"){
+//                    return str.dropFirst(2)
+//                }
                 displayError()
             }
             return str
@@ -105,6 +128,8 @@ class LoginViewController: UIViewController {
         self.activityIndicator.isHidden = true
         self.ui.setNavigationBarUI(on: self)
         self.ui.setKeyboardDismiss(on: self)
+        OTPfield.addTarget(self, action: #selector(inputChanges),
+                                 for: UIControl.Event.editingChanged)
     }
     
     func navigateToHome() {
