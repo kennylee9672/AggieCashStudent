@@ -11,45 +11,29 @@ import FirebaseAuth
 import GoogleSignIn
 import Firebase
 
-let INVALID_INFO = 0
-let NIL_INFO = 1
-let VERIFY_ERR = 2
-let DEFAULT_ERR = 3
+let PHONE_NUMBER_LEN = 10
+let US_CODE = "+1"
 
-class LoginViewController: UIViewController, GIDSignInDelegate {
+class LoginViewController: UIViewController {
     
     @IBOutlet weak var OTPfield: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var phoneNumberfield: UITextField!
+    @IBOutlet weak var phoneNumberField: UITextField!
     @IBOutlet weak var messageLable: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     let ui = UIcontroller()
-    let LoginErrors: [Int : String] = [
-        INVALID_INFO : "Please enter both email and password.",
-        NIL_INFO : "Invalid email or password.",
-        VERIFY_ERR : "Pleas check your network.",
-        DEFAULT_ERR : "Error."
-    ]
-    var verificationID: String = ""
-    var isPhoneSignIn = true // Default
+    var verificationID = ""
     
     /**
-     * ViewController Inialization:
+     * ViewController Inialization
      */
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        self.setupGoogleSignIn()
-        //        self.setUI()
+        self.setUI()
     }
     
-    //    override func viewDidDisappear(_ animated: Bool) {
-    //        self.messageLable.isHidden = true
-    //        self.activityIndicator.isHidden = true
-    //    }
-    
     /**
-     * Button Actions:
+     * Button Actions
      */
     @IBAction func touchSend(_ sender: Any) {
         self.sendOTP()
@@ -57,69 +41,21 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
     
     @IBAction func touchSignIn(_ sender: Any) {
         self.signIn()
-        self.navigateToHome()
     }
     
-    // MARK: GIDSignInDelegate
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
-            print(error.localizedDescription)
-            return
-        }
-        guard let auth = user.authentication else { return }
-        let credentials = GoogleAuthProvider.credential(withIDToken: auth.idToken, accessToken: auth.accessToken)
-        Auth.auth().signIn(with: credentials) { (authResult, error) in
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            } else {
-                print("Login Successful")
-//                self.navigateToHome()
-                // START ACTIVITY INDICATOR HERE
-                
-                //This is where you should add the functionality of successful login
-                //i.e. dismissing this view or push the home view controller etc
-            }
-        }
-    }
-    
-    func setupGoogleSignIn() {
-        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-        GIDSignIn.sharedInstance().delegate = self
-        GIDSignIn.sharedInstance()?.presentingViewController = self
-        // Automatically sign in
-        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
-    }
-    
-    func signIn() {
-        print("DEBUG: Signing in user")
-        
-        if self.isPhoneSignIn {
-            // Phone number sign in
-            let credential = PhoneAuthProvider.provider().credential(
-                withVerificationID: self.verificationID,
-                verificationCode: self.OTPfield.text!)
-            
-            Auth.auth().signIn(with: credential) { (authResult, error) in
+    /**
+     * Phone number sign in methods
+     */
+    func sendOTP() {
+        print("DEBUG: Sending OTP to user")
+        if let str = checkInput() {
+            let phoneNumber = US_CODE + str
+            PhoneAuthProvider.provider()
+                .verifyPhoneNumber(phoneNumber, uiDelegate: nil) { (verificationID, error) in
                 if let error = error {
                     print("DEBUG: \(error)")
                     return
                 }
-                print("DEBUG: Sucessfully sign in user")
-            }
-        }
-        else {
-            // Google email sign in
-            GIDSignIn.sharedInstance().signIn()
-        }
-    }
-    
-    func sendOTP() {
-        PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumberfield.text ?? "", uiDelegate: nil) { (verificationID, error) in
-            if let error = error {
-                print("DEBUG: \(error)")
-                return
-                
                 if let id = verificationID {
                     print("DEBUG: Sucessfully send code to user")
                     UserDefaults.standard.set(id, forKey: "authVerificationID")
@@ -127,6 +63,41 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
                 }
             }
         }
+        return
+    }
+    
+    func signIn() {
+        print("DEBUG: Signing in user")
+        let credential = PhoneAuthProvider.provider().credential(
+            withVerificationID: self.verificationID,
+            verificationCode: self.OTPfield.text!)
+        
+        Auth.auth().signIn(with: credential) { (authResult, error) in
+            if let error = error {
+                print("DEBUG: \(error)")
+                self.displayError()
+                return
+            }
+            print("DEBUG: Sucessfully sign in user")
+            self.navigateToHome()
+        }
+    }
+    
+    func checkInput() -> String? {
+        if let str: String = phoneNumberField.text {
+            if str.count != PHONE_NUMBER_LEN {
+                displayError()
+            }
+            return str
+        }
+        return nil
+    }
+    
+    /**
+     * Helper methods:
+     */
+    func displayError() {
+        self.messageLable.text = "Invalid Phone Number"
     }
     
     func setUI() {
@@ -136,41 +107,10 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
         self.ui.setKeyboardDismiss(on: self)
     }
     
-    /**
-     * Helper method:
-     *
-     * Verify login information
-     * UI setting
-     * ViewController segue
-     */
-    //    func verifyLogin(email: String, password: String) {
-    //        Auth.auth().signIn(withEmail: email, password: password) { res, error in
-    //            if error != nil {
-    //                self.displayError(with: INVALID_INFO)
-    //            } else {
-    //                if let isVerified = Auth.auth().currentUser?.isEmailVerified {
-    //                    if (isVerified) {
-    //                        self.navigateToHome()
-    //                    } else {
-    //                        self.displayError(with: VERIFY_ERR)
-    //                    }
-    //                }
-    //            }
-    //        }
-    //    }
-    
-    func displayError(with type: Int) {
-        self.messageLable.text = LoginErrors[type]
-    }
-    
-    func navigateToSignup() {
-        // TODO:
-    }
-    
     func navigateToHome() {
-        // TODO:
-        let homeViewController = UIStoryboard(name: "Other", bundle: nil).instantiateViewController(withIdentifier: "HomeTabBarViewController") as? UITabBarController
-        
+        // *Note: change "Other" to your storyboard name
+        let homeViewController = UIStoryboard(name: "Other", bundle: nil)
+            .instantiateViewController(withIdentifier: "HomeTabBarViewController") as? UITabBarController
         self.view.window?.rootViewController = homeViewController
         self.view.window?.makeKeyAndVisible()
     }

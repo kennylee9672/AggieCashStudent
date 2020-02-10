@@ -59,20 +59,34 @@
                                     <action selector="touchSignIn:" destination="tVQ-sO-D7C" eventType="touchUpInside" id="3Bz-Wr-jlq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipM-V8-EDx">
+                                <rect key="frame" x="65" y="85" width="284" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="5Vb-eb-8od">
+                                <rect key="frame" x="197" y="130" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="ipM-V8-EDx" firstAttribute="top" secondItem="JeL-gb-tnj" secondAttribute="top" constant="41" id="8ju-Zb-iU9"/>
                             <constraint firstItem="4Zi-Oq-6ZU" firstAttribute="top" secondItem="6D5-DG-bTm" secondAttribute="bottom" constant="17" id="AhS-Cw-1Vb"/>
                             <constraint firstItem="nvz-IE-e1N" firstAttribute="top" secondItem="JeL-gb-tnj" secondAttribute="top" constant="114" id="CNS-jj-SN0"/>
                             <constraint firstItem="6D5-DG-bTm" firstAttribute="trailing" secondItem="4Zi-Oq-6ZU" secondAttribute="trailing" id="DPb-VJ-gSb"/>
                             <constraint firstItem="ijt-qH-hgm" firstAttribute="centerX" secondItem="34R-MG-L3o" secondAttribute="centerX" id="KwQ-gS-EXJ"/>
+                            <constraint firstItem="ipM-V8-EDx" firstAttribute="trailing" secondItem="6D5-DG-bTm" secondAttribute="trailing" id="LAS-qf-Y3u"/>
                             <constraint firstItem="34R-MG-L3o" firstAttribute="top" secondItem="ijt-qH-hgm" secondAttribute="bottom" constant="44" id="MJc-mS-5op"/>
+                            <constraint firstItem="ipM-V8-EDx" firstAttribute="leading" secondItem="6D5-DG-bTm" secondAttribute="leading" id="WJ4-As-SX9"/>
                             <constraint firstItem="nvz-IE-e1N" firstAttribute="centerX" secondItem="N25-N3-Q61" secondAttribute="centerX" id="aIs-C8-KBs"/>
                             <constraint firstItem="6D5-DG-bTm" firstAttribute="leading" secondItem="JeL-gb-tnj" secondAttribute="leading" constant="65" id="buz-KK-HuG"/>
                             <constraint firstItem="4Zi-Oq-6ZU" firstAttribute="leading" secondItem="ijt-qH-hgm" secondAttribute="leading" id="cbv-zs-c86"/>
                             <constraint firstItem="4Zi-Oq-6ZU" firstAttribute="trailing" secondItem="ijt-qH-hgm" secondAttribute="trailing" id="cj9-sf-a0v"/>
                             <constraint firstItem="nvz-IE-e1N" firstAttribute="leading" secondItem="JeL-gb-tnj" secondAttribute="leading" constant="123" id="hZx-5n-CAR"/>
+                            <constraint firstItem="nvz-IE-e1N" firstAttribute="top" secondItem="5Vb-eb-8od" secondAttribute="bottom" constant="8" id="ieV-n1-83n"/>
                             <constraint firstItem="6D5-DG-bTm" firstAttribute="leading" secondItem="4Zi-Oq-6ZU" secondAttribute="leading" id="ipR-z3-EvT"/>
+                            <constraint firstItem="5Vb-eb-8od" firstAttribute="centerX" secondItem="ipM-V8-EDx" secondAttribute="centerX" id="oZc-5u-5ys"/>
                             <constraint firstItem="nvz-IE-e1N" firstAttribute="centerX" secondItem="6D5-DG-bTm" secondAttribute="centerX" id="sMI-FL-ysf"/>
                             <constraint firstItem="JeL-gb-tnj" firstAttribute="bottom" secondItem="34R-MG-L3o" secondAttribute="bottom" constant="299" id="tob-gM-dJj"/>
                             <constraint firstItem="34R-MG-L3o" firstAttribute="leading" secondItem="JeL-gb-tnj" secondAttribute="leading" constant="123" id="vqt-EM-jn6"/>
@@ -83,7 +97,9 @@
                     </view>
                     <connections>
                         <outlet property="OTPfield" destination="ijt-qH-hgm" id="Rc5-qQ-Grh"/>
-                        <outlet property="phoneNumberfield" destination="6D5-DG-bTm" id="qDq-b9-sCp"/>
+                        <outlet property="activityIndicator" destination="5Vb-eb-8od" id="HqV-ZF-qTd"/>
+                        <outlet property="messageLable" destination="ipM-V8-EDx" id="ENv-uz-oLL"/>
+                        <outlet property="phoneNumberField" destination="6D5-DG-bTm" id="qDq-b9-sCp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ajN-Y1-zcU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
