@@ -18,9 +18,9 @@ let DEFAULT_ERR = 3
 
 class LoginViewController: UIViewController, GIDSignInDelegate {
     
-    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var OTPfield: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var phoneNumber: UITextField!
+    @IBOutlet weak var phoneNumberfield: UITextField!
     @IBOutlet weak var messageLable: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
@@ -39,14 +39,14 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
      */
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.setupGoogleSignIn()
-        self.setUI()
+        //        self.setupGoogleSignIn()
+        //        self.setUI()
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        self.messageLable.isHidden = true
-        self.activityIndicator.isHidden = true
-    }
+    //    override func viewDidDisappear(_ animated: Bool) {
+    //        self.messageLable.isHidden = true
+    //        self.activityIndicator.isHidden = true
+    //    }
     
     /**
      * Button Actions:
@@ -57,6 +57,7 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
     
     @IBAction func touchSignIn(_ sender: Any) {
         self.signIn()
+        self.navigateToHome()
     }
     
     // MARK: GIDSignInDelegate
@@ -73,9 +74,9 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
                 return
             } else {
                 print("Login Successful")
-                self.navigateToHome()
+//                self.navigateToHome()
                 // START ACTIVITY INDICATOR HERE
-
+                
                 //This is where you should add the functionality of successful login
                 //i.e. dismissing this view or push the home view controller etc
             }
@@ -97,7 +98,7 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
             // Phone number sign in
             let credential = PhoneAuthProvider.provider().credential(
                 withVerificationID: self.verificationID,
-                verificationCode: self.emailField.text!)
+                verificationCode: self.OTPfield.text!)
             
             Auth.auth().signIn(with: credential) { (authResult, error) in
                 if let error = error {
@@ -114,15 +115,16 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
     }
     
     func sendOTP() {
-        PhoneAuthProvider.provider().verifyPhoneNumber("+16507668662", uiDelegate: nil) { (verificationID, error) in
+        PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumberfield.text ?? "", uiDelegate: nil) { (verificationID, error) in
             if let error = error {
                 print("DEBUG: \(error)")
                 return
-            }
-            if let id = verificationID {
-                print("DEBUG: Sucessfully send code to user")
-                UserDefaults.standard.set(id, forKey: "authVerificationID")
-                self.verificationID = UserDefaults.standard.string(forKey: "authVerificationID")!
+                
+                if let id = verificationID {
+                    print("DEBUG: Sucessfully send code to user")
+                    UserDefaults.standard.set(id, forKey: "authVerificationID")
+                    self.verificationID = UserDefaults.standard.string(forKey: "authVerificationID")!
+                }
             }
         }
     }
@@ -141,21 +143,21 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
      * UI setting
      * ViewController segue
      */
-    func verifyLogin(email: String, password: String) {
-        Auth.auth().signIn(withEmail: email, password: password) { res, error in
-            if error != nil {
-                self.displayError(with: INVALID_INFO)
-            } else {
-                if let isVerified = Auth.auth().currentUser?.isEmailVerified {
-                    if (isVerified) {
-                        self.navigateToHome()
-                    } else {
-                        self.displayError(with: VERIFY_ERR)
-                    }
-                }
-            }
-        }
-    }
+    //    func verifyLogin(email: String, password: String) {
+    //        Auth.auth().signIn(withEmail: email, password: password) { res, error in
+    //            if error != nil {
+    //                self.displayError(with: INVALID_INFO)
+    //            } else {
+    //                if let isVerified = Auth.auth().currentUser?.isEmailVerified {
+    //                    if (isVerified) {
+    //                        self.navigateToHome()
+    //                    } else {
+    //                        self.displayError(with: VERIFY_ERR)
+    //                    }
+    //                }
+    //            }
+    //        }
+    //    }
     
     func displayError(with type: Int) {
         self.messageLable.text = LoginErrors[type]
@@ -167,9 +169,10 @@ class LoginViewController: UIViewController, GIDSignInDelegate {
     
     func navigateToHome() {
         // TODO:
-        let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: "HomeTabBarViewController") as? UITabBarController
+        let homeViewController = UIStoryboard(name: "Other", bundle: nil).instantiateViewController(withIdentifier: "HomeTabBarViewController") as? UITabBarController
         
         self.view.window?.rootViewController = homeViewController
         self.view.window?.makeKeyAndVisible()
     }
 }
+

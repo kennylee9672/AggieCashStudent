@@ -20,13 +20,13 @@
 		ADF3200823E2B082008CF7DB /* UIcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF3200723E2B082008CF7DB /* UIcontroller.swift */; };
 		C550723723DE2202006DFA37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550723623DE2202006DFA37 /* AppDelegate.swift */; };
 		C550723923DE2202006DFA37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C550723823DE2202006DFA37 /* SceneDelegate.swift */; };
-		C550723E23DE2202006DFA37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C550723C23DE2202006DFA37 /* Main.storyboard */; };
+		C550723E23DE2202006DFA37 /* Other.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C550723C23DE2202006DFA37 /* Other.storyboard */; };
 		C550724023DE2205006DFA37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C550723F23DE2205006DFA37 /* Assets.xcassets */; };
 		C550724323DE2205006DFA37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C550724123DE2205006DFA37 /* LaunchScreen.storyboard */; };
 		C564C16423ECE2CB00AAFD6B /* MenuCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C564C16323ECE2CB00AAFD6B /* MenuCellViewController.swift */; };
 		C58D0EF823F0CFC700F0B1AF /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D0EF723F0CFC700F0B1AF /* SettingTableViewController.swift */; };
 		C58D0EFA23F0D00D00F0B1AF /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D0EF923F0D00D00F0B1AF /* ProfileTableViewController.swift */; };
-		C58D0EFE23F0D85300F0B1AF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58D0EFD23F0D85300F0B1AF /* Login.storyboard */; };
+		C58D0EFE23F0D85300F0B1AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58D0EFD23F0D85300F0B1AF /* Main.storyboard */; };
 		C58D0F0023F0E25D00F0B1AF /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D0EFF23F0E25D00F0B1AF /* MenuCell.swift */; };
 		C5F0473323E3EC6700F445A4 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0473223E3EC6700F445A4 /* CartViewController.swift */; };
 		C5F0473523E3F11800F445A4 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0473423E3F11800F445A4 /* OrdersViewController.swift */; };
@@ -53,14 +53,14 @@
 		C550723323DE2202006DFA37 /* AggieCashStudent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AggieCashStudent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C550723623DE2202006DFA37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C550723823DE2202006DFA37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C550723D23DE2202006DFA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C550723D23DE2202006DFA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Other.storyboard; sourceTree = "<group>"; };
 		C550723F23DE2205006DFA37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C550724223DE2205006DFA37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C550724423DE2205006DFA37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C564C16323ECE2CB00AAFD6B /* MenuCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCellViewController.swift; sourceTree = "<group>"; };
 		C58D0EF723F0CFC700F0B1AF /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		C58D0EF923F0D00D00F0B1AF /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
-		C58D0EFD23F0D85300F0B1AF /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		C58D0EFD23F0D85300F0B1AF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C58D0EFF23F0E25D00F0B1AF /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		C5F0473223E3EC6700F445A4 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		C5F0473423E3F11800F445A4 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
@@ -145,12 +145,12 @@
 				C550723623DE2202006DFA37 /* AppDelegate.swift */,
 				C550723823DE2202006DFA37 /* SceneDelegate.swift */,
 				ADF3200723E2B082008CF7DB /* UIcontroller.swift */,
-				C550723C23DE2202006DFA37 /* Main.storyboard */,
+				C550723C23DE2202006DFA37 /* Other.storyboard */,
 				C550724123DE2205006DFA37 /* LaunchScreen.storyboard */,
 				C550723F23DE2205006DFA37 /* Assets.xcassets */,
 				C550724423DE2205006DFA37 /* Info.plist */,
 				5BEE32F723E2ACDD0038FE6C /* GoogleService-Info.plist */,
-				C58D0EFD23F0D85300F0B1AF /* Login.storyboard */,
+				C58D0EFD23F0D85300F0B1AF /* Main.storyboard */,
 			);
 			path = AggieCashStudent;
 			sourceTree = "<group>";
@@ -235,11 +235,11 @@
 			files = (
 				C550724323DE2205006DFA37 /* LaunchScreen.storyboard in Resources */,
 				C550724023DE2205006DFA37 /* Assets.xcassets in Resources */,
-				C58D0EFE23F0D85300F0B1AF /* Login.storyboard in Resources */,
+				C58D0EFE23F0D85300F0B1AF /* Main.storyboard in Resources */,
 				EB98405423ECBC29005A85D0 /* ItemCell.xib in Resources */,
 				5BEE32F823E2ACDD0038FE6C /* GoogleService-Info.plist in Resources */,
 				ADF31FF923E2AA30008CF7DB /* Podfile in Resources */,
-				C550723E23DE2202006DFA37 /* Main.storyboard in Resources */,
+				C550723E23DE2202006DFA37 /* Other.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,12 +333,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C550723C23DE2202006DFA37 /* Main.storyboard */ = {
+		C550723C23DE2202006DFA37 /* Other.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C550723D23DE2202006DFA37 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Other.storyboard;
 			sourceTree = "<group>";
 		};
 		C550724123DE2205006DFA37 /* LaunchScreen.storyboard */ = {
@@ -472,14 +472,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2J43M5H25R;
+				DEVELOPMENT_TEAM = 6H6P74M82Q;
 				INFOPLIST_FILE = AggieCashStudent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ucdavis.cs.AggieCashStudent.dc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucdavis.cs.AggieCashStudentk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -492,14 +492,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2J43M5H25R;
+				DEVELOPMENT_TEAM = 6H6P74M82Q;
 				INFOPLIST_FILE = AggieCashStudent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ucdavis.cs.AggieCashStudent.dc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ucdavis.cs.AggieCashStudent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
