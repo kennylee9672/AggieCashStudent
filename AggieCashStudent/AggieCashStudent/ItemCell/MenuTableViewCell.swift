@@ -10,18 +10,18 @@ import UIKit
 
 class MenuTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var itemName: UILabel!
-    @IBOutlet weak var price: UILabel!
-    @IBOutlet weak var itemDescription: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var nameLable: UILabel!
+    @IBOutlet weak var priceLable: UILabel!
+    @IBOutlet weak var descriptionLable: UILabel!
+    
+    func setItem(item: Item) {
+        self.nameLable.text = item.name
+        self.priceLable.text = String(item.price)
+        self.descriptionLable.text = item.description
+        self.setUI()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func setUI() {
+        
     }
-
 }
