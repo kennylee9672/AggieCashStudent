@@ -80,7 +80,7 @@ class LoginViewController: UIViewController {
             self.view.isUserInteractionEnabled = false
             view.addSubview(activityIndicator)
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
-            self.navigateToHome()
+            self.signIn()
             self.activityIndicator.stopAnimating()
             }
         }
@@ -101,7 +101,7 @@ class LoginViewController: UIViewController {
             }
             print("DEBUG: Sucessfully sign in user")
             self.activityIndicator.stopAnimating()
-//            self.navigateToHome()
+            self.navigateToHome()
         }
     }
     
