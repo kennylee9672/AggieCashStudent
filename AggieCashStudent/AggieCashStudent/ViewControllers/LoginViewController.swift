@@ -29,9 +29,13 @@ class LoginViewController: UIViewController {
      */
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        testFS();
         self.setUI()
     }
-    
+    func testFS(){
+       
+    }
     /**
      * Button Actions
      */
