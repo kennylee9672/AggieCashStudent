@@ -24,14 +24,14 @@ class UIcontroller {
     }
     
     func setButtonUI(bn: UIButton) {
-        //text
+        // Text
         bn.titleLabel?.font = .systemFont(ofSize: 18)
-        bn.setTitleColor(UIColor.init(displayP3Red: 1, green: 0.85, blue: 0, alpha: 1.0), for: .normal)
-        //layout
-        //bn.frame = CGRect(x: 100, y: 100, width: 300, height: 40)
+        //bn.setTitleColor(UIColor.init(displayP3Red: 1, green: 0.85, blue: 0, alpha: 1.0), for: .normal)
+        // Layout
+        bn.frame = CGRect(x: 100, y: 100, width: 300, height: 40)
         bn.layer.cornerRadius = bn.frame.height / 2
-        bn.backgroundColor = UIColor.init(displayP3Red: 0.22, green: 0.50, blue: 0.54, alpha: 1)
-        //shadow
+        //bn.backgroundColor = UIColor.init(displayP3Red: 0.22, green: 0.50, blue: 0.54, alpha: 1)
+        // Shadow
         bn.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         bn.layer.shadowOffset = CGSize(width: 0, height: 3)
         bn.layer.shadowOpacity = 1.0

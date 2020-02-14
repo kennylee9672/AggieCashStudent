@@ -103,6 +103,8 @@
                         <outlet property="activityIndicator" destination="5Vb-eb-8od" id="HqV-ZF-qTd"/>
                         <outlet property="messageLable" destination="ipM-V8-EDx" id="ENv-uz-oLL"/>
                         <outlet property="phoneNumberField" destination="6D5-DG-bTm" id="qDq-b9-sCp"/>
+                        <outlet property="signInButton" destination="34R-MG-L3o" id="dHv-70-oay"/>
+                        <outlet property="verifyButton" destination="4Zi-Oq-6ZU" id="0Fx-fp-3vL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ajN-Y1-zcU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
