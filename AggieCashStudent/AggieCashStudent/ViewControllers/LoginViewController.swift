@@ -20,6 +20,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var phoneNumberField: UITextField!
     @IBOutlet weak var messageLable: UILabel!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var verifyButton: UIButton!
+    @IBOutlet weak var signInButton: UIButton!
     
     let ui = UIcontroller()
     var verificationID = ""
@@ -128,6 +130,8 @@ class LoginViewController: UIViewController {
     }
     
     func setUI() {
+        self.ui.setButtonUI(bn: self.verifyButton)
+        self.ui.setButtonUI(bn: self.signInButton)
         self.messageLable.isHidden = true
         self.activityIndicator.isHidden = true
         self.ui.setNavigationBarUI(on: self)

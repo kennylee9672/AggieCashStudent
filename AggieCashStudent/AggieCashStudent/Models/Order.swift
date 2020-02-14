@@ -8,18 +8,6 @@
 
 import Foundation
 
-class Item {
-    var name = ""
-    var price = 0.0
-    var seller: String
-    
-    init() {
-        self.name = "Item Name"
-        self.price = 0.0
-        self.seller = "00000000" //seller's id
-    }
-}
-
 class Order {
     var items: [String]
     var buyer: String 
