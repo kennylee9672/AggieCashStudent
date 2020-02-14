@@ -47,8 +47,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func touchSignIn(_ sender: Any) {
-//        self.signIn()
-        navigateToHome()
+        self.signIn()
+//        navigateToHome()
     }
     
     /**

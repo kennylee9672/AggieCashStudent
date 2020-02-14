@@ -9,18 +9,18 @@
 import UIKit
 
 class VendorViewController: UIViewController {
-
+    
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let dataArray = ["AAA", "BBB", "CCC", "DDD", "EEE", "FFF", "GGG"]
+    let dataArray = ["Shah's Halal Food", "Kado's Asian Grill", "Go Fusion", "Nash & Proper", "Authentic Mexican Food"]
     
     var estimateWidth = 160.0
-    var cellMarginSize = 16.0
+    var cellMarginSize = 20.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Set Delegates
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
@@ -58,7 +58,18 @@ extension VendorViewController: UICollectionViewDataSource {
         cell.setData(text: self.dataArray[indexPath.row])
         
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Other", bundle: nil)
+        let vs = storyboard.instantiateViewController(identifier: "MenuViewController")
+        let menu = vs as! MenuViewController
+//        menu.modalPresentationStyle = .fullScreen
+        self.definesPresentationContext = true
+        menu.modalPresentationStyle = .overCurrentContext
+        menu.sellerID = self.dataArray[indexPath.row]
+        self.present(menu, animated: true, completion: nil)
         
+        print(self.dataArray[indexPath.row])
     }
 }
 
