@@ -12,7 +12,7 @@ class Item {
     var name = ""
     var description = ""
     var price = 0.0
-    var isAvalible = true
+    var isAvailable = true
     var sellerID: String  //seller's id
     
     // Default constructor
@@ -20,7 +20,7 @@ class Item {
         self.name = "Item Name"
         self.description = "Item Description"
         self.price = 0.0
-        self.isAvalible = true
+        self.isAvailable = true
         self.sellerID = "00000000"
     }
     
@@ -29,7 +29,7 @@ class Item {
         self.name = name
         self.description = description
         self.price = price
-        self.isAvalible = isAvalible
+        self.isAvailable = isAvalible
         self.sellerID = sellerID
     }
     
@@ -38,11 +38,18 @@ class Item {
         self.name = data["name"] as! String
         self.description = data["description"] as! String
         self.price = data["price"] as! Double
-        self.isAvalible = data["isAvalible"] as! Bool
+        
+        let temp = data["isAvailable"] as! String
+        if temp == "TRUE" {
+            self.isAvailable = true
+        }else{
+            self.isAvailable = false
+        }
+        
         self.sellerID = data["sellerID"] as! String
     }
     
-    func printOrder() {
+    func printItem() {
         print("=======================")
         print("name: \(self.name)")
         print("description: \(self.description)")

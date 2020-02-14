@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gyW-fj-MMg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ibQ-bA-BVQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -472,11 +472,20 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyA-5X-1Ee">
+                                <rect key="frame" x="166" y="433" width="82" height="30"/>
+                                <state key="normal" title="CheckMenu"/>
+                                <connections>
+                                    <segue destination="ibQ-bA-BVQ" kind="show" id="SDp-XU-Ls1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="CyA-5X-1Ee" firstAttribute="centerY" secondItem="D7P-U9-bVc" secondAttribute="centerY" id="4P9-Tp-GUc"/>
                             <constraint firstItem="t5R-DX-e4X" firstAttribute="bottom" secondItem="OX2-Ub-sx1" secondAttribute="bottom" id="HJ8-2T-33o"/>
                             <constraint firstItem="t5R-DX-e4X" firstAttribute="leading" secondItem="OX2-Ub-sx1" secondAttribute="leading" id="LYz-dt-y8V"/>
+                            <constraint firstItem="CyA-5X-1Ee" firstAttribute="centerX" secondItem="D7P-U9-bVc" secondAttribute="centerX" id="h5t-Vy-YzM"/>
                             <constraint firstItem="t5R-DX-e4X" firstAttribute="trailing" secondItem="OX2-Ub-sx1" secondAttribute="trailing" id="rHd-5I-iOd"/>
                             <constraint firstItem="t5R-DX-e4X" firstAttribute="top" secondItem="OX2-Ub-sx1" secondAttribute="top" id="wJA-Bf-Ypf"/>
                         </constraints>
@@ -496,11 +505,11 @@
             <objects>
                 <viewController storyboardIdentifier="MenuViewController" title="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ibQ-bA-BVQ" customClass="MenuViewController" customModule="AggieCashStudent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aKS-Qt-OtU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YyO-Nr-DSg">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" rowHeight="140" id="vna-Hi-q6a" customClass="MenuTableViewCell" customModule="AggieCashStudent" customModuleProvider="target">
@@ -556,6 +565,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="b72-Tj-Elw"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jWC-a9-7XJ"/>
                     <connections>
                         <outlet property="tableView" destination="YyO-Nr-DSg" id="qRr-1D-cNJ"/>
                     </connections>

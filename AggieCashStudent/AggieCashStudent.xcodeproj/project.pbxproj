@@ -28,7 +28,7 @@
 		C58D0EF823F0CFC700F0B1AF /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D0EF723F0CFC700F0B1AF /* SettingTableViewController.swift */; };
 		C58D0EFA23F0D00D00F0B1AF /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D0EF923F0D00D00F0B1AF /* ProfileTableViewController.swift */; };
 		C58D0EFE23F0D85300F0B1AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58D0EFD23F0D85300F0B1AF /* Main.storyboard */; };
-		C58D0F0323F5CAE700F0B1AF /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D0F0223F5CAE700F0B1AF /* MenuTableViewCell.swift */; };
+		C58D0F0423F63A7E00F0B1AF /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58D0F0223F5CAE700F0B1AF /* MenuTableViewCell.swift */; };
 		C5F0473323E3EC6700F445A4 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0473223E3EC6700F445A4 /* CartViewController.swift */; };
 		C5F0473523E3F11800F445A4 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F0473423E3F11800F445A4 /* OrdersViewController.swift */; };
 		CC6DC2A9B28C6DD5746A7F0A /* Pods_AggieCashStudent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B5EDF0D35393AE23496DBB /* Pods_AggieCashStudent.framework */; };
@@ -115,7 +115,6 @@
 				C5F0473423E3F11800F445A4 /* OrdersViewController.swift */,
 				C58D0EF723F0CFC700F0B1AF /* SettingTableViewController.swift */,
 				C58D0EF923F0D00D00F0B1AF /* ProfileTableViewController.swift */,
-				C58D0F0223F5CAE700F0B1AF /* MenuTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -163,6 +162,7 @@
 			children = (
 				EB98405123ECBC29005A85D0 /* ItemCell.swift */,
 				EB98405223ECBC29005A85D0 /* ItemCell.xib */,
+				C58D0F0223F5CAE700F0B1AF /* MenuTableViewCell.swift */,
 			);
 			path = ItemCell;
 			sourceTree = "<group>";
@@ -324,8 +324,8 @@
 				C5F0473323E3EC6700F445A4 /* CartViewController.swift in Sources */,
 				C58D0EFA23F0D00D00F0B1AF /* ProfileTableViewController.swift in Sources */,
 				ADF3200123E2ABCB008CF7DB /* SettingViewController.swift in Sources */,
+				C58D0F0423F63A7E00F0B1AF /* MenuTableViewCell.swift in Sources */,
 				ADF3200823E2B082008CF7DB /* UIcontroller.swift in Sources */,
-				C564C16423ECE2CB00AAFD6B /* MenuCellViewController.swift in Sources */,
 				5B0AD93423E3B18F00F2C13C /* HomeTabBarViewController.swift in Sources */,
 				C58D0EF823F0CFC700F0B1AF /* SettingTableViewController.swift in Sources */,
 				C550723923DE2202006DFA37 /* SceneDelegate.swift in Sources */,
