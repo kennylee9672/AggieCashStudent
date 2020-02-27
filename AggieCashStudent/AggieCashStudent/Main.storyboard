@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Yg-cc-iow">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tVQ-sO-D7C">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -138,51 +138,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B0h-Lw-noC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1265" y="-585"/>
-        </scene>
-        <!--Payment View Controller-->
-        <scene sceneID="3rQ-B1-0jH">
-            <objects>
-                <viewController storyboardIdentifier="PaymentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Yg-cc-iow" customClass="PaymentViewController" customModule="AggieCashStudent" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HVU-Ba-Sqb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXR-ff-VpV">
-                                <rect key="frame" x="148" y="242" width="119" height="108"/>
-                                <color key="backgroundColor" red="0.70680099730000001" green="0.81954377889999996" blue="0.81961029770000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Pay"/>
-                                <connections>
-                                    <action selector="touchLogin:" destination="3Yg-cc-iow" eventType="touchUpInside" id="HE9-oB-PZD"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FaceIDLable" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b7-1p-uTq">
-                                <rect key="frame" x="148" y="376" width="119" height="21"/>
-                                <color key="backgroundColor" red="0.95390385389999999" green="0.69195014239999997" blue="0.18408909439999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="hXR-ff-VpV" firstAttribute="leading" secondItem="9MG-OR-KZ7" secondAttribute="leading" constant="148" id="BGa-Ek-lbD"/>
-                            <constraint firstItem="9MG-OR-KZ7" firstAttribute="bottom" secondItem="hXR-ff-VpV" secondAttribute="bottom" constant="512" id="Jhs-Hx-0nl"/>
-                            <constraint firstItem="6b7-1p-uTq" firstAttribute="leading" secondItem="hXR-ff-VpV" secondAttribute="leading" id="Sqp-ji-j1c"/>
-                            <constraint firstItem="6b7-1p-uTq" firstAttribute="trailing" secondItem="hXR-ff-VpV" secondAttribute="trailing" id="b95-8B-V9y"/>
-                            <constraint firstItem="6b7-1p-uTq" firstAttribute="top" secondItem="hXR-ff-VpV" secondAttribute="bottom" constant="26" id="fQQ-4e-ATF"/>
-                            <constraint firstItem="hXR-ff-VpV" firstAttribute="top" secondItem="9MG-OR-KZ7" secondAttribute="top" constant="198" id="nba-7g-6kH"/>
-                            <constraint firstItem="9MG-OR-KZ7" firstAttribute="trailing" secondItem="hXR-ff-VpV" secondAttribute="trailing" constant="147" id="oIS-d8-thg"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="9MG-OR-KZ7"/>
-                    </view>
-                    <connections>
-                        <outlet property="faceIDLabel" destination="6b7-1p-uTq" id="rXk-lD-pHf"/>
-                        <outlet property="loginButton" destination="hXR-ff-VpV" id="nkb-Q0-mki"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lLm-qT-ZUE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2707.2463768115945" y="-585.26785714285711"/>
         </scene>
     </scenes>
     <resources>

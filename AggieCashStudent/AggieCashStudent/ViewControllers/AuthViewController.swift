@@ -10,11 +10,10 @@ import UIKit
 import LocalAuthentication
 import Foundation
 
-class PaymentViewController: UIViewController {
+class AuthViewController: UIViewController {
     
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var faceIDLabel: UILabel!
-    //    @IBOutlet weak var stateView: UIView!
     
     var context = LAContext()
     
@@ -24,7 +23,7 @@ class PaymentViewController: UIViewController {
     
     var state = AuthenticationState.loggedout {
         didSet {
-            self.loginButton.isHighlighted = state == .loggedin
+            self.continueButton.isHighlighted = state == .loggedin
             self.faceIDLabel.isHidden = (state == .loggedin) || (context.biometryType != .faceID)
             //self.stateView.backgroundColor = state == .loggedin ? .green : .red
         }

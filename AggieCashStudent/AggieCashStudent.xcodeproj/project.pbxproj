@@ -10,6 +10,10 @@
 		5B0AD93223E3A4F400F2C13C /* Buyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0AD93123E3A4F300F2C13C /* Buyer.swift */; };
 		5B0AD93423E3B18F00F2C13C /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0AD93323E3B18F00F2C13C /* HomeTabBarViewController.swift */; };
 		5BEE32F823E2ACDD0038FE6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE32F723E2ACDD0038FE6C /* GoogleService-Info.plist */; };
+		AD4B02A224086DB800AEF2C6 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02A124086DB800AEF2C6 /* AuthViewController.swift */; };
+		AD4B02A624086DC400AEF2C6 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02A324086DC400AEF2C6 /* MenuCell.swift */; };
+		AD4B02A724086DC400AEF2C6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02A424086DC400AEF2C6 /* ProfileViewController.swift */; };
+		AD4B02A824086DC400AEF2C6 /* MenuCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02A524086DC400AEF2C6 /* MenuCellViewController.swift */; };
 		ADCF227323F6366700C76A80 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF227223F6366700C76A80 /* Item.swift */; };
 		ADDCDF6023F10CB20014B48F /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCDF5F23F10CB20014B48F /* Order.swift */; };
 		ADDCDF6223F10CB90014B48F /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCDF6123F10CB90014B48F /* Seller.swift */; };
@@ -42,6 +46,10 @@
 		5B0AD93323E3B18F00F2C13C /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 		5BEE32F723E2ACDD0038FE6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7285358FF1621993D1DCDFAC /* Pods-AggieCashStudent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggieCashStudent.release.xcconfig"; path = "Target Support Files/Pods-AggieCashStudent/Pods-AggieCashStudent.release.xcconfig"; sourceTree = "<group>"; };
+		AD4B02A124086DB800AEF2C6 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		AD4B02A324086DC400AEF2C6 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		AD4B02A424086DC400AEF2C6 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AD4B02A524086DC400AEF2C6 /* MenuCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCellViewController.swift; sourceTree = "<group>"; };
 		ADCF227223F6366700C76A80 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		ADDCDF5F23F10CB20014B48F /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		ADDCDF6123F10CB90014B48F /* Seller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
@@ -105,6 +113,10 @@
 		ADF3200623E2AD69008CF7DB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD4B02A324086DC400AEF2C6 /* MenuCell.swift */,
+				AD4B02A524086DC400AEF2C6 /* MenuCellViewController.swift */,
+				AD4B02A424086DC400AEF2C6 /* ProfileViewController.swift */,
+				AD4B02A124086DB800AEF2C6 /* AuthViewController.swift */,
 				ADF31FFA23E2AB9C008CF7DB /* SignUpViewController.swift */,
 				ADF31FFC23E2ABAB008CF7DB /* LoginViewController.swift */,
 				ADF3200023E2ABCB008CF7DB /* SettingViewController.swift */,
@@ -315,17 +327,21 @@
 				ADCF227323F6366700C76A80 /* Item.swift in Sources */,
 				5B0AD93223E3A4F400F2C13C /* Buyer.swift in Sources */,
 				C550723723DE2202006DFA37 /* AppDelegate.swift in Sources */,
+				AD4B02A824086DC400AEF2C6 /* MenuCellViewController.swift in Sources */,
 				ADDCDF6023F10CB20014B48F /* Order.swift in Sources */,
 				C5F0473523E3F11800F445A4 /* OrdersViewController.swift in Sources */,
 				ADF3200523E2AC64008CF7DB /* VendorViewController.swift in Sources */,
 				ADDCDF6223F10CB90014B48F /* Seller.swift in Sources */,
+				AD4B02A224086DB800AEF2C6 /* AuthViewController.swift in Sources */,
 				ADF31FFB23E2AB9C008CF7DB /* SignUpViewController.swift in Sources */,
 				ADF31FFD23E2ABAB008CF7DB /* LoginViewController.swift in Sources */,
 				C5F0473323E3EC6700F445A4 /* CartViewController.swift in Sources */,
 				C58D0EFA23F0D00D00F0B1AF /* ProfileTableViewController.swift in Sources */,
 				ADF3200123E2ABCB008CF7DB /* SettingViewController.swift in Sources */,
 				C58D0F0423F63A7E00F0B1AF /* MenuTableViewCell.swift in Sources */,
+				AD4B02A724086DC400AEF2C6 /* ProfileViewController.swift in Sources */,
 				ADF3200823E2B082008CF7DB /* UIcontroller.swift in Sources */,
+				AD4B02A624086DC400AEF2C6 /* MenuCell.swift in Sources */,
 				5B0AD93423E3B18F00F2C13C /* HomeTabBarViewController.swift in Sources */,
 				C58D0EF823F0CFC700F0B1AF /* SettingTableViewController.swift in Sources */,
 				C550723923DE2202006DFA37 /* SceneDelegate.swift in Sources */,

@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mkd-0E-BGs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-785.50724637681162" y="945.53571428571422"/>
+            <point key="canvasLocation" x="845" y="1210"/>
         </scene>
         <!--Cart-->
         <scene sceneID="RWe-o6-Nui">
@@ -74,10 +74,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w5r-RZ-kss">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="605"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="725" id="9Fr-UO-lGE"/>
+                                    <constraint firstAttribute="height" constant="605" id="7RQ-P5-Ok9"/>
                                 </constraints>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNT-hv-rwW">
@@ -86,23 +86,77 @@
                                     <navigationItem title="Order Summary" id="huE-TP-rQZ"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYm-Hj-3Wt">
+                                <rect key="frame" x="20" y="744" width="374" height="48"/>
+                                <color key="backgroundColor" red="0.70680099730000001" green="0.81954377889999996" blue="0.81961029770000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <action selector="touchContinue:" destination="L4S-cR-sDy" eventType="touchUpInside" id="EY2-gX-hW9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9X-h9-Umk">
+                                <rect key="frame" x="183.5" y="715" width="47.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="w5r-RZ-kss" firstAttribute="top" secondItem="FNT-hv-rwW" secondAttribute="bottom" id="7P8-Ot-ZNl"/>
-                            <constraint firstItem="w5r-RZ-kss" firstAttribute="leading" secondItem="FNT-hv-rwW" secondAttribute="leading" id="KA8-eh-UO0"/>
-                            <constraint firstItem="w5r-RZ-kss" firstAttribute="leading" secondItem="oKx-RP-UiA" secondAttribute="leading" id="MAx-g0-msS"/>
-                            <constraint firstItem="w5r-RZ-kss" firstAttribute="centerX" secondItem="IhF-rq-ux8" secondAttribute="centerX" id="Mrb-1q-QhU"/>
-                            <constraint firstItem="w5r-RZ-kss" firstAttribute="bottom" secondItem="oKx-RP-UiA" secondAttribute="bottom" id="Sx7-h4-kBP"/>
-                            <constraint firstItem="w5r-RZ-kss" firstAttribute="trailing" secondItem="FNT-hv-rwW" secondAttribute="trailing" id="a9f-T5-QUf"/>
+                            <constraint firstItem="oKx-RP-UiA" firstAttribute="trailing" secondItem="rYm-Hj-3Wt" secondAttribute="trailing" constant="20" id="DPU-Fl-00F"/>
+                            <constraint firstItem="oKx-RP-UiA" firstAttribute="bottom" secondItem="rYm-Hj-3Wt" secondAttribute="bottom" constant="21" id="J2h-Cb-2I3"/>
+                            <constraint firstItem="w5r-RZ-kss" firstAttribute="top" secondItem="IhF-rq-ux8" secondAttribute="top" constant="88" id="JWa-Jr-cg3"/>
+                            <constraint firstItem="w5r-RZ-kss" firstAttribute="leading" secondItem="FNT-hv-rwW" secondAttribute="leading" id="NJJ-Bp-lCe"/>
+                            <constraint firstItem="w5r-RZ-kss" firstAttribute="centerX" secondItem="S9X-h9-Umk" secondAttribute="centerX" id="Uwv-e7-hC0"/>
+                            <constraint firstItem="w5r-RZ-kss" firstAttribute="trailing" secondItem="oKx-RP-UiA" secondAttribute="trailing" id="WBw-Am-P7f"/>
+                            <constraint firstItem="w5r-RZ-kss" firstAttribute="top" secondItem="FNT-hv-rwW" secondAttribute="bottom" id="kk8-jn-wDI"/>
+                            <constraint firstItem="rYm-Hj-3Wt" firstAttribute="leading" secondItem="oKx-RP-UiA" secondAttribute="leading" constant="20" id="ofI-Cg-7mh"/>
+                            <constraint firstItem="w5r-RZ-kss" firstAttribute="trailing" secondItem="FNT-hv-rwW" secondAttribute="trailing" id="qRY-2x-yu7"/>
+                            <constraint firstItem="w5r-RZ-kss" firstAttribute="leading" secondItem="oKx-RP-UiA" secondAttribute="leading" id="u5l-8p-T1h"/>
+                            <constraint firstItem="S9X-h9-Umk" firstAttribute="top" secondItem="w5r-RZ-kss" secondAttribute="bottom" constant="22" id="yhA-Ur-Hxq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oKx-RP-UiA"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" id="kSz-We-YvW"/>
+                    <connections>
+                        <outlet property="continueButton" destination="rYm-Hj-3Wt" id="JLD-e6-47o"/>
+                        <outlet property="faceIDLabel" destination="S9X-h9-Umk" id="jOo-qn-uOm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EmY-Wd-MXB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4.3478260869565224" y="952.90178571428567"/>
+            <point key="canvasLocation" x="844.92753623188412" y="533.70535714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Lp3-fv-6NY">
+            <objects>
+                <viewController id="Uta-c6-MFm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ouR-U9-MBf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="b5V-bN-Ucc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qlu-09-Mza" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1596" y="534"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ywm-eU-f5Y">
+            <objects>
+                <viewController id="JIY-BI-MRY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="acz-Iq-Xs9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="G3x-LG-sN2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9cQ-Al-dHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2336" y="534"/>
         </scene>
         <!--Account-->
         <scene sceneID="u1L-al-n1o">
@@ -262,7 +316,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGF-nB-e7L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="785.50724637681162" y="580.58035714285711"/>
+            <point key="canvasLocation" x="845" y="-127"/>
         </scene>
         <!--Profile Table View Controller-->
         <scene sceneID="dDr-CS-UHm">
@@ -468,7 +522,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDl-NB-RTE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1481" y="581"/>
+            <point key="canvasLocation" x="1596" y="-127"/>
         </scene>
         <!--VendorViewController-->
         <scene sceneID="g1j-n2-FEO">
@@ -522,7 +576,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fIL-2f-Yce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="778.26086956521749" y="-87.053571428571431"/>
+            <point key="canvasLocation" x="845" y="-817"/>
         </scene>
         <!--MenuViewController-->
         <scene sceneID="pa7-LQ-9iw">
@@ -630,7 +684,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CBx-8V-DO7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1478.2608695652175" y="-87.053571428571431"/>
+            <point key="canvasLocation" x="1596" y="-818"/>
         </scene>
         <!--LoginViewController-->
         <scene sceneID="5ec-6i-LbZ">
