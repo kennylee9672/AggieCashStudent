@@ -12,7 +12,8 @@ target 'AggieCashStudent' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
-  pod 'GoogleSignIn'
+  pod 'GoogleSignIn' 
+  pod 'BiometricAuthenticator'
 
   # Pods for AggieCashStudent
 
