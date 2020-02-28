@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import GoogleSignIn
 import FirebaseAuth
+import SquareInAppPaymentsSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +21,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         //        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         //        GIDSignIn.sharedInstance().delegate = self
+        
+        // Set your Square Application ID
+        SQIPInAppPaymentsSDK.squareApplicationID = Constants.Square.APPLICATION_ID
+        
+        // Start application
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.rootViewController = ExampleViewController()
+//        window?.makeKeyAndVisible()
+
+        Style.setDefaults()
         return true
     }
     

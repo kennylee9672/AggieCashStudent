@@ -93,6 +93,7 @@
                                 <state key="normal" title="Continue"/>
                                 <connections>
                                     <action selector="touchContinue:" destination="L4S-cR-sDy" eventType="touchUpInside" id="EY2-gX-hW9"/>
+                                    <segue destination="41l-W2-XnD" kind="show" id="EZf-m2-odZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9X-h9-Umk">
@@ -128,20 +129,21 @@
             </objects>
             <point key="canvasLocation" x="844.92753623188412" y="533.70535714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--Example View Controller-->
         <scene sceneID="Lp3-fv-6NY">
             <objects>
-                <viewController id="Uta-c6-MFm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExampleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uta-c6-MFm" customClass="ExampleViewController" customModule="AggieCashStudent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ouR-U9-MBf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="b5V-bN-Ucc"/>
                     </view>
+                    <navigationItem key="navigationItem" id="O9d-gY-gGb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qlu-09-Mza" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1596" y="534"/>
+            <point key="canvasLocation" x="2330" y="534"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ywm-eU-f5Y">
@@ -156,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9cQ-Al-dHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2336" y="534"/>
+            <point key="canvasLocation" x="3242.0289855072465" y="533.70535714285711"/>
         </scene>
         <!--Account-->
         <scene sceneID="u1L-al-n1o">
@@ -820,6 +822,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIm-s0-c0Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-920" y="238"/>
+        </scene>
+        <!--Order Navigation Controller-->
+        <scene sceneID="Ofl-pS-EOh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="41l-W2-XnD" customClass="OrderNavigationController" customModule="AggieCashStudent" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="PeT-fu-k0n"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="q1r-YS-wgf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Uta-c6-MFm" kind="relationship" relationship="rootViewController" id="mWP-l5-vPR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x14-rw-oT8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1595.6521739130435" y="533.70535714285711"/>
         </scene>
     </scenes>
     <resources>

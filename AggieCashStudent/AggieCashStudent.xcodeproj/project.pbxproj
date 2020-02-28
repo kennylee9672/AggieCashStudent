@@ -14,6 +14,22 @@
 		AD4B02A624086DC400AEF2C6 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02A324086DC400AEF2C6 /* MenuCell.swift */; };
 		AD4B02A724086DC400AEF2C6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02A424086DC400AEF2C6 /* ProfileViewController.swift */; };
 		AD4B02A824086DC400AEF2C6 /* MenuCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02A524086DC400AEF2C6 /* MenuCellViewController.swift */; };
+		AD4B02B0240875F400AEF2C6 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02AF240875F400AEF2C6 /* PayViewController.swift */; };
+		AD4B02D324087E1900AEF2C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02B824087E1800AEF2C6 /* Constants.swift */; };
+		AD4B02D424087E1900AEF2C6 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02B924087E1800AEF2C6 /* Style.swift */; };
+		AD4B02D524087E1900AEF2C6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02BA24087E1800AEF2C6 /* Color.swift */; };
+		AD4B02D624087E1900AEF2C6 /* ChargeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02BC24087E1800AEF2C6 /* ChargeApi.swift */; };
+		AD4B02D924087E1900AEF2C6 /* extension-UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02C124087E1800AEF2C6 /* extension-UIView.swift */; };
+		AD4B02DB24087E1900AEF2C6 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02C524087E1800AEF2C6 /* ExampleViewController.swift */; };
+		AD4B02DC24087E1900AEF2C6 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02C624087E1800AEF2C6 /* OrderViewController.swift */; };
+		AD4B02DD24087E1900AEF2C6 /* OrderNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02C724087E1800AEF2C6 /* OrderNavigationController.swift */; };
+		AD4B02DE24087E1900AEF2C6 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02C924087E1800AEF2C6 /* ExampleView.swift */; };
+		AD4B02DF24087E1900AEF2C6 /* TableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02CB24087E1800AEF2C6 /* TableRowView.swift */; };
+		AD4B02E024087E1900AEF2C6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02CC24087E1800AEF2C6 /* HeaderView.swift */; };
+		AD4B02E124087E1900AEF2C6 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02CD24087E1800AEF2C6 /* ActionButton.swift */; };
+		AD4B02E224087E1900AEF2C6 /* HairlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02CE24087E1800AEF2C6 /* HairlineView.swift */; };
+		AD4B02E324087E1900AEF2C6 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02CF24087E1800AEF2C6 /* OrderView.swift */; };
+		AD4B02E524087E1900AEF2C6 /* HalfSheetPresentationControllerHeightProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4B02D224087E1800AEF2C6 /* HalfSheetPresentationControllerHeightProtocol.swift */; };
 		ADCF227323F6366700C76A80 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCF227223F6366700C76A80 /* Item.swift */; };
 		ADDCDF6023F10CB20014B48F /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCDF5F23F10CB20014B48F /* Order.swift */; };
 		ADDCDF6223F10CB90014B48F /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCDF6123F10CB90014B48F /* Seller.swift */; };
@@ -50,6 +66,23 @@
 		AD4B02A324086DC400AEF2C6 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		AD4B02A424086DC400AEF2C6 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AD4B02A524086DC400AEF2C6 /* MenuCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCellViewController.swift; sourceTree = "<group>"; };
+		AD4B02AF240875F400AEF2C6 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		AD4B02B824087E1800AEF2C6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AD4B02B924087E1800AEF2C6 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		AD4B02BA24087E1800AEF2C6 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		AD4B02BC24087E1800AEF2C6 /* ChargeApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargeApi.swift; sourceTree = "<group>"; };
+		AD4B02C124087E1800AEF2C6 /* extension-UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "extension-UIView.swift"; sourceTree = "<group>"; };
+		AD4B02C224087E1800AEF2C6 /* mCommExample.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = mCommExample.entitlements; sourceTree = "<group>"; };
+		AD4B02C524087E1800AEF2C6 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		AD4B02C624087E1800AEF2C6 /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		AD4B02C724087E1800AEF2C6 /* OrderNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderNavigationController.swift; sourceTree = "<group>"; };
+		AD4B02C924087E1800AEF2C6 /* ExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		AD4B02CB24087E1800AEF2C6 /* TableRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRowView.swift; sourceTree = "<group>"; };
+		AD4B02CC24087E1800AEF2C6 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		AD4B02CD24087E1800AEF2C6 /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		AD4B02CE24087E1800AEF2C6 /* HairlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairlineView.swift; sourceTree = "<group>"; };
+		AD4B02CF24087E1800AEF2C6 /* OrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		AD4B02D224087E1800AEF2C6 /* HalfSheetPresentationControllerHeightProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfSheetPresentationControllerHeightProtocol.swift; sourceTree = "<group>"; };
 		ADCF227223F6366700C76A80 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		ADDCDF5F23F10CB20014B48F /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		ADDCDF6123F10CB90014B48F /* Seller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
@@ -110,6 +143,70 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		AD4B02B624087E1800AEF2C6 /* InAppPaymentsSample */ = {
+			isa = PBXGroup;
+			children = (
+				AD4B02C224087E1800AEF2C6 /* mCommExample.entitlements */,
+			);
+			path = InAppPaymentsSample;
+			sourceTree = "<group>";
+		};
+		AD4B02BB24087E1800AEF2C6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AD4B02BC24087E1800AEF2C6 /* ChargeApi.swift */,
+			);
+			name = Network;
+			path = Constants/Network;
+			sourceTree = "<group>";
+		};
+		AD4B02C024087E1800AEF2C6 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD4B02C124087E1800AEF2C6 /* extension-UIView.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		AD4B02C424087E1800AEF2C6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD4B02C524087E1800AEF2C6 /* ExampleViewController.swift */,
+				AD4B02C624087E1800AEF2C6 /* OrderViewController.swift */,
+				AD4B02C724087E1800AEF2C6 /* OrderNavigationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AD4B02C824087E1800AEF2C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD4B02C924087E1800AEF2C6 /* ExampleView.swift */,
+				AD4B02CA24087E1800AEF2C6 /* Generators */,
+				AD4B02CF24087E1800AEF2C6 /* OrderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD4B02CA24087E1800AEF2C6 /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				AD4B02CB24087E1800AEF2C6 /* TableRowView.swift */,
+				AD4B02CC24087E1800AEF2C6 /* HeaderView.swift */,
+				AD4B02CD24087E1800AEF2C6 /* ActionButton.swift */,
+				AD4B02CE24087E1800AEF2C6 /* HairlineView.swift */,
+			);
+			path = Generators;
+			sourceTree = "<group>";
+		};
+		AD4B02D124087E1800AEF2C6 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				AD4B02D224087E1800AEF2C6 /* HalfSheetPresentationControllerHeightProtocol.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		ADF3200623E2AD69008CF7DB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +224,7 @@
 				C5F0473423E3F11800F445A4 /* OrdersViewController.swift */,
 				C58D0EF723F0CFC700F0B1AF /* SettingTableViewController.swift */,
 				C58D0EF923F0D00D00F0B1AF /* ProfileTableViewController.swift */,
+				AD4B02AF240875F400AEF2C6 /* PayViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -152,31 +250,40 @@
 		C550723523DE2202006DFA37 /* AggieCashStudent */ = {
 			isa = PBXGroup;
 			children = (
-				EB98404C23ECBA70005A85D0 /* ItemCell */,
+				AD4B02B924087E1800AEF2C6 /* Style.swift */,
+				AD4B02B824087E1800AEF2C6 /* Constants.swift */,
+				AD4B02BA24087E1800AEF2C6 /* Color.swift */,
+				AD4B02C824087E1800AEF2C6 /* Views */,
+				AD4B02D124087E1800AEF2C6 /* Animations */,
+				AD4B02C424087E1800AEF2C6 /* Controllers */,
+				AD4B02C024087E1800AEF2C6 /* extensions */,
+				AD4B02BB24087E1800AEF2C6 /* Network */,
+				AD4B02B624087E1800AEF2C6 /* InAppPaymentsSample */,
+				EB98404C23ECBA70005A85D0 /* Cells */,
 				5B0AD92E23E3A4C900F2C13C /* Models */,
 				ADF3200623E2AD69008CF7DB /* ViewControllers */,
 				ADF31FF823E2AA30008CF7DB /* Podfile */,
+				ADF3200723E2B082008CF7DB /* UIcontroller.swift */,
 				C550723623DE2202006DFA37 /* AppDelegate.swift */,
 				C550723823DE2202006DFA37 /* SceneDelegate.swift */,
-				ADF3200723E2B082008CF7DB /* UIcontroller.swift */,
+				C58D0EFD23F0D85300F0B1AF /* Main.storyboard */,
 				C550723C23DE2202006DFA37 /* Other.storyboard */,
 				C550724123DE2205006DFA37 /* LaunchScreen.storyboard */,
 				C550723F23DE2205006DFA37 /* Assets.xcassets */,
 				C550724423DE2205006DFA37 /* Info.plist */,
 				5BEE32F723E2ACDD0038FE6C /* GoogleService-Info.plist */,
-				C58D0EFD23F0D85300F0B1AF /* Main.storyboard */,
 			);
 			path = AggieCashStudent;
 			sourceTree = "<group>";
 		};
-		EB98404C23ECBA70005A85D0 /* ItemCell */ = {
+		EB98404C23ECBA70005A85D0 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				EB98405123ECBC29005A85D0 /* ItemCell.swift */,
 				EB98405223ECBC29005A85D0 /* ItemCell.xib */,
 				C58D0F0223F5CAE700F0B1AF /* MenuTableViewCell.swift */,
 			);
-			path = ItemCell;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F408710AA66898F497D2B647 /* Frameworks */ = {
@@ -324,9 +431,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4B02E524087E1900AEF2C6 /* HalfSheetPresentationControllerHeightProtocol.swift in Sources */,
+				AD4B02B0240875F400AEF2C6 /* PayViewController.swift in Sources */,
+				AD4B02E224087E1900AEF2C6 /* HairlineView.swift in Sources */,
 				ADCF227323F6366700C76A80 /* Item.swift in Sources */,
 				5B0AD93223E3A4F400F2C13C /* Buyer.swift in Sources */,
+				AD4B02DB24087E1900AEF2C6 /* ExampleViewController.swift in Sources */,
 				C550723723DE2202006DFA37 /* AppDelegate.swift in Sources */,
+				AD4B02D324087E1900AEF2C6 /* Constants.swift in Sources */,
 				AD4B02A824086DC400AEF2C6 /* MenuCellViewController.swift in Sources */,
 				ADDCDF6023F10CB20014B48F /* Order.swift in Sources */,
 				C5F0473523E3F11800F445A4 /* OrdersViewController.swift in Sources */,
@@ -335,18 +447,29 @@
 				AD4B02A224086DB800AEF2C6 /* AuthViewController.swift in Sources */,
 				ADF31FFB23E2AB9C008CF7DB /* SignUpViewController.swift in Sources */,
 				ADF31FFD23E2ABAB008CF7DB /* LoginViewController.swift in Sources */,
+				AD4B02E024087E1900AEF2C6 /* HeaderView.swift in Sources */,
+				AD4B02D624087E1900AEF2C6 /* ChargeApi.swift in Sources */,
 				C5F0473323E3EC6700F445A4 /* CartViewController.swift in Sources */,
 				C58D0EFA23F0D00D00F0B1AF /* ProfileTableViewController.swift in Sources */,
 				ADF3200123E2ABCB008CF7DB /* SettingViewController.swift in Sources */,
+				AD4B02DD24087E1900AEF2C6 /* OrderNavigationController.swift in Sources */,
+				AD4B02D524087E1900AEF2C6 /* Color.swift in Sources */,
+				AD4B02E324087E1900AEF2C6 /* OrderView.swift in Sources */,
+				AD4B02D924087E1900AEF2C6 /* extension-UIView.swift in Sources */,
+				AD4B02D424087E1900AEF2C6 /* Style.swift in Sources */,
 				C58D0F0423F63A7E00F0B1AF /* MenuTableViewCell.swift in Sources */,
 				AD4B02A724086DC400AEF2C6 /* ProfileViewController.swift in Sources */,
 				ADF3200823E2B082008CF7DB /* UIcontroller.swift in Sources */,
 				AD4B02A624086DC400AEF2C6 /* MenuCell.swift in Sources */,
 				5B0AD93423E3B18F00F2C13C /* HomeTabBarViewController.swift in Sources */,
+				AD4B02DE24087E1900AEF2C6 /* ExampleView.swift in Sources */,
+				AD4B02E124087E1900AEF2C6 /* ActionButton.swift in Sources */,
 				C58D0EF823F0CFC700F0B1AF /* SettingTableViewController.swift in Sources */,
 				C550723923DE2202006DFA37 /* SceneDelegate.swift in Sources */,
 				ADF3200323E2ABD8008CF7DB /* MenuViewController.swift in Sources */,
 				EB98405323ECBC29005A85D0 /* ItemCell.swift in Sources */,
+				AD4B02DC24087E1900AEF2C6 /* OrderViewController.swift in Sources */,
+				AD4B02DF24087E1900AEF2C6 /* TableRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
